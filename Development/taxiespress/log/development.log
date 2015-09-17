@@ -117,3 +117,82 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'vehicles'
 [0m
   [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `vehicles`
+
+
+Started GET "/" for 200.0.118.173 at 2015-09-17 00:27:48 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (7.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.5ms)
+Completed 200 OK in 45ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 200.0.118.173 at 2015-09-17 00:28:35 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 200.0.118.173 at 2015-09-17 00:28:49 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (9.2ms)[0m  SELECT `contacts`.* FROM `contacts`
+  Rendered contacts/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 1490ms (Views: 1470.4ms | ActiveRecord: 15.3ms)
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 200.0.118.173 at 2015-09-17 00:28:50 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-797413e731f7c4a78b6b085aec13ac2bf1510251fb15809cfeb9cef61dec6428.css?body=1" for 200.0.118.173 at 2015-09-17 00:28:50 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 200.0.118.173 at 2015-09-17 00:28:50 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 200.0.118.173 at 2015-09-17 00:28:50 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 200.0.118.173 at 2015-09-17 00:28:51 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 200.0.118.173 at 2015-09-17 00:28:51 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 200.0.118.173 at 2015-09-17 00:28:51 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 200.0.118.173 at 2015-09-17 00:28:51 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 200.0.118.173 at 2015-09-17 00:28:51 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 200.0.118.173 at 2015-09-17 00:28:51 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 200.0.118.173 at 2015-09-17 00:28:51 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 200.0.118.173 at 2015-09-17 00:28:51 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/contacts/new" for 200.0.118.173 at 2015-09-17 00:28:57 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (44.3ms)
+  Rendered contacts/new.html.erb within layouts/application (53.3ms)
+Completed 200 OK in 131ms (Views: 113.7ms | ActiveRecord: 2.5ms)
