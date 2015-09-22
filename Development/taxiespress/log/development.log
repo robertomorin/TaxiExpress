@@ -19,6 +19,7 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'users'
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `users`
+<<<<<<< HEAD
   [1m[36m (106.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
   [1m[35m (96.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
   [1m[36mActiveRecord::SchemaMigration Load (5.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
@@ -29,6 +30,16 @@ Migrating to CreateUsers (20150913224613)
   [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
   [1m[35mActiveRecord::SchemaMigration Load (1.5ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
   [1m[36m (4.7ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateVehicles (20150915025259)
+  [1m[35m (98.5ms)[0m  CREATE TABLE `vehicles` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `trademark` varchar(255), `model` varchar(255), `year` int(11), `driver_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (9.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150915025259')
+  [1m[36m (8.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (25.8ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (6.0ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+>>>>>>> 1d377122110a98d0f8669646b0edea0a4ee03e93
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -37,9 +48,13 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiespress_development'
   AND fk.table_name = 'users'
 [0m
+<<<<<<< HEAD
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `users`
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+=======
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `users`
+>>>>>>> 1d377122110a98d0f8669646b0edea0a4ee03e93
   [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
@@ -47,12 +62,33 @@ WHERE fk.referenced_column_name is not null
 FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiespress_development'
+<<<<<<< HEAD
   AND fk.table_name = 'users'
 [0m
   [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `users`
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
   [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+  AND fk.table_name = 'vehicles'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `vehicles`
+  [1m[36m (145.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (142.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (4.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20150913224613)
+  [1m[35m (29.9ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `lastname` varchar(255), `login` varchar(255), `password` varchar(255), `email` varchar(255), `profile_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150913224613')
+  [1m[36m (11.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateVehicles (20150915025259)
+  [1m[35m (32.1ms)[0m  CREATE TABLE `vehicles` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `trademark` varchar(255), `model` varchar(255), `year` int(11), `driver_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150915025259')
+  [1m[36m (7.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (5.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+>>>>>>> 1d377122110a98d0f8669646b0edea0a4ee03e93
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -62,8 +98,28 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'users'
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `users`
+<<<<<<< HEAD
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+=======
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiespress_development'
+  AND fk.table_name = 'vehicles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `vehicles`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateContacts (20150915034151)
+  [1m[35m (30.1ms)[0m  CREATE TABLE `contacts` (`id` int(11) auto_increment PRIMARY KEY, `user_id` int(11), `name` varchar(255), `lastname` varchar(255), `email` varchar(255), `adress` varchar(255), `message` varchar(255), `phone` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (16.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150915034151')
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+>>>>>>> 1d377122110a98d0f8669646b0edea0a4ee03e93
   [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
@@ -71,12 +127,19 @@ WHERE fk.referenced_column_name is not null
 FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiespress_development'
+<<<<<<< HEAD
   AND fk.table_name = 'users'
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `users`
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
   [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+  AND fk.table_name = 'contacts'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `contacts`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+>>>>>>> 1d377122110a98d0f8669646b0edea0a4ee03e93
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -85,16 +148,27 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiespress_development'
   AND fk.table_name = 'users'
 [0m
+<<<<<<< HEAD
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `users`
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
   [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `users`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+>>>>>>> 1d377122110a98d0f8669646b0edea0a4ee03e93
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
 FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiespress_development'
+<<<<<<< HEAD
   AND fk.table_name = 'users'
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `users`
+=======
+  AND fk.table_name = 'vehicles'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `vehicles`
+>>>>>>> 1d377122110a98d0f8669646b0edea0a4ee03e93
