@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Paymenttypes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @paymenttypes.each do |paymenttype| %>
+      <tr>
+        <td><%= paymenttype.name %></td>
+        <td><%= link_to 'Show', paymenttype %></td>
+        <td><%= link_to 'Edit', edit_paymenttype_path(paymenttype) %></td>
+        <td><%= link_to 'Destroy', paymenttype, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Paymenttype', new_paymenttype_path %>

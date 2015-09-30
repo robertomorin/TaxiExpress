@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :paymenttypes
+  resources :statuses
   resources :drivers
   resources :vehicles
   resources :operators
