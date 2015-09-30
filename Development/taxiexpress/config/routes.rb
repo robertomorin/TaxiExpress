@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
+
   resources :drivers
   resources :vehicles
-=======
   resources :operators
   resources :users
->>>>>>> 32ad9a856f1ea547040913b414f025b2e46ac78e
+
   #get 'home/index'
   root 'home#index'
 
