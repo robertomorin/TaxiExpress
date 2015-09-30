@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150930063701) do
 
   create_table "drivers", force: :cascade do |t|
@@ -19,10 +20,20 @@ ActiveRecord::Schema.define(version: 20150930063701) do
     t.string   "email",      limit: 255
     t.string   "password",   limit: 255
     t.integer  "vehicle_id", limit: 4
+=======
+ActiveRecord::Schema.define(version: 20150930063505) do
+
+  create_table "operators", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.string   "lastname",   limit: 255
+    t.string   "mail",       limit: 255
+    t.string   "password",   limit: 255
+>>>>>>> 32ad9a856f1ea547040913b414f025b2e46ac78e
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
 
+<<<<<<< HEAD
   add_index "drivers", ["vehicle_id"], name: "index_drivers_on_vehicle_id", using: :btree
 
   create_table "vehicles", force: :cascade do |t|
@@ -34,4 +45,15 @@ ActiveRecord::Schema.define(version: 20150930063701) do
   end
 
   add_foreign_key "drivers", "vehicles"
+=======
+  create_table "users", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.string   "lastname",   limit: 255
+    t.string   "mail",       limit: 255
+    t.string   "password",   limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+>>>>>>> 32ad9a856f1ea547040913b414f025b2e46ac78e
 end
