@@ -11,15 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20150930063701) do
-=======
-ActiveRecord::Schema.define(version: 20150930071512) do
->>>>>>> e456a17d3e8c8f891610841e161ec5514fc2daa2
-=======
 ActiveRecord::Schema.define(version: 20150930080044) do
->>>>>>> 299f7f4611f67922114fbe475f75e1fd538019c5
 
   create_table "drivers", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -52,20 +44,10 @@ ActiveRecord::Schema.define(version: 20150930080044) do
     t.datetime "updated_at",             null: false
   end
 
-<<<<<<< HEAD
-  create_table "users", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.string   "lastname",   limit: 255
-    t.string   "mail",       limit: 255
-    t.string   "password",   limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-=======
   create_table "paymenttypes", force: :cascade do |t|
     t.text     "name",       limit: 65535
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
->>>>>>> e456a17d3e8c8f891610841e161ec5514fc2daa2
   end
 
   create_table "reservations", force: :cascade do |t|
@@ -96,8 +78,6 @@ ActiveRecord::Schema.define(version: 20150930080044) do
     t.datetime "updated_at",               null: false
   end
 
-<<<<<<< HEAD
-=======
   create_table "users", force: :cascade do |t|
     t.string   "name",       limit: 255
     t.string   "lastname",   limit: 255
@@ -115,7 +95,6 @@ ActiveRecord::Schema.define(version: 20150930080044) do
     t.datetime "updated_at",               null: false
   end
 
->>>>>>> e456a17d3e8c8f891610841e161ec5514fc2daa2
   add_foreign_key "drivers", "vehicles"
   add_foreign_key "feedbacks", "reservations"
   add_foreign_key "reservations", "operators"
