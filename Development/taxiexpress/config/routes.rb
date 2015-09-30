@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :feedbacks
+  resources :reservations
   resources :paymenttypes
   resources :statuses
   resources :drivers

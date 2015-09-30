@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  observation: MyText
+  datecreated: 2015-09-30 08:00:44
+  reservation_id: 
+
+two:
+  observation: MyText
+  datecreated: 2015-09-30 08:00:44
+  reservation_id: 
