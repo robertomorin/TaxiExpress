@@ -1,15 +1,16 @@
-<%= simple_form_for(@driver) do |f| %>
-  <%= f.error_notification %>
+<%= simple_form_for @driver, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= error_span(@driver[:name]) %>
+  <%= f.input :lastname %>
+  <%= error_span(@driver[:lastname]) %>
+  <%= f.input :email %>
+  <%= error_span(@driver[:email]) %>
+  <%= f.input :password %>
+  <%= error_span(@driver[:password]) %>
+  <%= f.input :vehicle_id %>
+  <%= error_span(@driver[:vehicle_id]) %>
 
-  <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :lastname %>
-    <%= f.input :email %>
-    <%= f.input :password %>
-    <%= f.association :vehicle %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                drivers_path, :class => 'btn btn-default' %>
 <% end %>

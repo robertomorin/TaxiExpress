@@ -1,13 +1,12 @@
-<%= simple_form_for(@vehicle) do |f| %>
-  <%= f.error_notification %>
+<%= simple_form_for @vehicle, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :trademark %>
+  <%= error_span(@vehicle[:trademark]) %>
+  <%= f.input :model %>
+  <%= error_span(@vehicle[:model]) %>
+  <%= f.input :creationyear %>
+  <%= error_span(@vehicle[:creationyear]) %>
 
-  <div class="form-inputs">
-    <%= f.input :trademark %>
-    <%= f.input :model %>
-    <%= f.input :creationyear %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                vehicles_path, :class => 'btn btn-default' %>
 <% end %>
