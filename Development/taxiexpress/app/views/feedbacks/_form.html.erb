@@ -1,0 +1,13 @@
+<%= simple_form_for(@feedback) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :observation %>
+    <%= f.input :datecreated %>
+    <%= f.association :reservation %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
