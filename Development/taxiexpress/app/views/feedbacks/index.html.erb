@@ -1,31 +1,40 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Listing Feedbacks</h1>
-
-<table>
+<%- model_class = Feedback -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Observation</th>
-      <th>Datecreated</th>
-      <th>Reservation</th>
-      <th colspan="3"></th>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:observation) %></th>
+      <th><%= model_class.human_attribute_name(:datecreated) %></th>
+      <th><%= model_class.human_attribute_name(:reservation_id) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
-
   <tbody>
     <% @feedbacks.each do |feedback| %>
       <tr>
+        <td><%= link_to feedback.id, feedback_path(feedback) %></td>
         <td><%= feedback.observation %></td>
         <td><%= feedback.datecreated %></td>
-        <td><%= feedback.reservation %></td>
-        <td><%= link_to 'Show', feedback %></td>
-        <td><%= link_to 'Edit', edit_feedback_path(feedback) %></td>
-        <td><%= link_to 'Destroy', feedback, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= feedback.reservation_id %></td>
+        <td><%=l feedback.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_feedback_path(feedback), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      feedback_path(feedback),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New Feedback', new_feedback_path %>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_feedback_path,
+            :class => 'btn btn-primary' %>

@@ -1,47 +1,56 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Listing Reservations</h1>
-
-<table>
+<%- model_class = Reservation -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Passengersquantity</th>
-      <th>Vehicletype</th>
-      <th>Originaddress</th>
-      <th>Destinationaddress</th>
-      <th>Price</th>
-      <th>Date</th>
-      <th>Vehicle</th>
-      <th>User</th>
-      <th>Operator</th>
-      <th>Status</th>
-      <th>Paymenttype</th>
-      <th colspan="3"></th>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:passengersquantity) %></th>
+      <th><%= model_class.human_attribute_name(:vehicletype) %></th>
+      <th><%= model_class.human_attribute_name(:originaddress) %></th>
+      <th><%= model_class.human_attribute_name(:destinationaddress) %></th>
+      <th><%= model_class.human_attribute_name(:price) %></th>
+      <th><%= model_class.human_attribute_name(:date) %></th>
+      <th><%= model_class.human_attribute_name(:vehicle_id) %></th>
+      <th><%= model_class.human_attribute_name(:user_id) %></th>
+      <th><%= model_class.human_attribute_name(:operator_id) %></th>
+      <th><%= model_class.human_attribute_name(:status_id) %></th>
+      <th><%= model_class.human_attribute_name(:paymenttype_id) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
-
   <tbody>
     <% @reservations.each do |reservation| %>
       <tr>
+        <td><%= link_to reservation.id, reservation_path(reservation) %></td>
         <td><%= reservation.passengersquantity %></td>
         <td><%= reservation.vehicletype %></td>
         <td><%= reservation.originaddress %></td>
         <td><%= reservation.destinationaddress %></td>
         <td><%= reservation.price %></td>
         <td><%= reservation.date %></td>
-        <td><%= reservation.vehicle %></td>
-        <td><%= reservation.user %></td>
-        <td><%= reservation.operator %></td>
-        <td><%= reservation.status %></td>
-        <td><%= reservation.paymenttype %></td>
-        <td><%= link_to 'Show', reservation %></td>
-        <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
-        <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= reservation.vehicle_id %></td>
+        <td><%= reservation.user_id %></td>
+        <td><%= reservation.operator_id %></td>
+        <td><%= reservation.status_id %></td>
+        <td><%= reservation.paymenttype_id %></td>
+        <td><%=l reservation.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_reservation_path(reservation), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      reservation_path(reservation),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New Reservation', new_reservation_path %>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_reservation_path,
+            :class => 'btn btn-primary' %>
