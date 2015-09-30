@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  passengersquantity: 1
+  vehicletype: MyText
+  originaddress: MyText
+  destinationaddress: MyText
+  price: 9.99
+  date: 2015-09-30 07:58:32
+  vehicle_id: 
+  user_id: 
+  operator_id: 
+  status_id: 
+  paymenttype_id: 
+
+two:
+  passengersquantity: 1
+  vehicletype: MyText
+  originaddress: MyText
+  destinationaddress: MyText
+  price: 9.99
+  date: 2015-09-30 07:58:32
+  vehicle_id: 
+  user_id: 
+  operator_id: 
+  status_id: 
+  paymenttype_id: 

@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Passengersquantity:</strong>
+  <%= @reservation.passengersquantity %>
+</p>
+
+<p>
+  <strong>Vehicletype:</strong>
+  <%= @reservation.vehicletype %>
+</p>
+
+<p>
+  <strong>Originaddress:</strong>
+  <%= @reservation.originaddress %>
+</p>
+
+<p>
+  <strong>Destinationaddress:</strong>
+  <%= @reservation.destinationaddress %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @reservation.price %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @reservation.date %>
+</p>
+
+<p>
+  <strong>Vehicle:</strong>
+  <%= @reservation.vehicle %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @reservation.user %>
+</p>
+
+<p>
+  <strong>Operator:</strong>
+  <%= @reservation.operator %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @reservation.status %>
+</p>
+
+<p>
+  <strong>Paymenttype:</strong>
+  <%= @reservation.paymenttype %>
+</p>
+
+<%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+<%= link_to 'Back', reservations_path %>
