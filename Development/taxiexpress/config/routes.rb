@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :drivers
+  resources :vehicles
   #get 'home/index'
   root 'home#index'
 

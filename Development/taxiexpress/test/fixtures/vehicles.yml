@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  trademark: MyString
+  model: MyString
+  creationyear: 1
+
+two:
+  trademark: MyString
+  model: MyString
+  creationyear: 1
