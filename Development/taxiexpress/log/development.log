@@ -1531,3 +1531,32 @@ ActionController::RoutingError (No route matches [GET] "/path1"):
 =======
 >>>>>>> 01e1e1dd858e2835af1407390b189037b64a0da5
 >>>>>>> 7f87602f896ab129e75b93479646e2f772044982
+
+
+Started GET "/" for 200.0.118.173 at 2015-10-01 00:17:10 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 616ms (Views: 599.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 200.0.118.173 at 2015-10-01 00:17:58 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 451ms (Views: 449.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 200.0.118.173 at 2015-10-01 00:19:29 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 270ms (Views: 268.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 200.0.118.173 at 2015-10-01 00:21:41 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 270ms (Views: 269.6ms | ActiveRecord: 0.0ms)
