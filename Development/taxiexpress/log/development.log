@@ -492,6 +492,37 @@ WHERE fk.referenced_column_name is not null
 
   [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `vehicles`[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+<<<<<<< HEAD
+Migrating to CreateStatuses (20150930070845)
+  [1m[35m (7.9ms)[0m  CREATE TABLE `statuses` (`id` int(11) auto_increment PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150930070845')
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePaymenttypes (20150930071512)
+  [1m[35m (6.7ms)[0m  CREATE TABLE `paymenttypes` (`id` int(11) auto_increment PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150930071512')
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateReservations (20150930075832)
+  [1m[35m (6.8ms)[0m  CREATE TABLE `reservations` (`id` int(11) auto_increment PRIMARY KEY, `passengersquantity` int(11), `vehicletype` text, `originaddress` text, `destinationaddress` text, `price` decimal, `date` datetime, `vehicle_id` int(11), `user_id` int(11), `operator_id` int(11), `status_id` int(11), `paymenttype_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_reservations_on_vehicle_id`  (`vehicle_id`) ,  INDEX `index_reservations_on_user_id`  (`user_id`) ,  INDEX `index_reservations_on_operator_id`  (`operator_id`) ,  INDEX `index_reservations_on_status_id`  (`status_id`) ,  INDEX `index_reservations_on_paymenttype_id`  (`paymenttype_id`) ) ENGINE=InnoDB
+  [1m[36m (17.5ms)[0m  [1mALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_fadbcd7cf7`
+FOREIGN KEY (`vehicle_id`)
+  REFERENCES `vehicles` (`id`)
+[0m
+  [1m[35m (14.6ms)[0m  ALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_48a92fce51`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+
+  [1m[36m (15.6ms)[0m  [1mALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_20c2b68908`
+FOREIGN KEY (`operator_id`)
+  REFERENCES `operators` (`id`)
+[0m
+  [1m[35m (15.3ms)[0m  ALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_1bd997b878`
+FOREIGN KEY (`status_id`)
+  REFERENCES `statuses` (`id`)
+
+  [1m[36m (15.6ms)[0m  [1mALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_2f3d031103`
+=======
 Migrating to CreateReservations (20150930075832)
   [1m[35m (41.1ms)[0m  CREATE TABLE `reservations` (`id` int(11) auto_increment PRIMARY KEY, `passengersquantity` int(11), `vehicletype` text, `originaddress` text, `destinationaddress` text, `price` decimal, `date` datetime, `vehicle_id` int(11), `user_id` int(11), `operator_id` int(11), `status_id` int(11), `paymenttype_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_reservations_on_vehicle_id`  (`vehicle_id`) ,  INDEX `index_reservations_on_user_id`  (`user_id`) ,  INDEX `index_reservations_on_operator_id`  (`operator_id`) ,  INDEX `index_reservations_on_status_id`  (`status_id`) ,  INDEX `index_reservations_on_paymenttype_id`  (`paymenttype_id`) ) ENGINE=InnoDB
   [1m[36m (74.7ms)[0m  [1mALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_fadbcd7cf7`
@@ -511,23 +542,39 @@ FOREIGN KEY (`status_id`)
   REFERENCES `statuses` (`id`)
 
   [1m[36m (79.0ms)[0m  [1mALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_2f3d031103`
+>>>>>>> 7a5c87dde23d98eac490080ad483b87ccda6ccef
 FOREIGN KEY (`paymenttype_id`)
   REFERENCES `paymenttypes` (`id`)
 [0m
   [1m[35m (0.1ms)[0m  BEGIN
+<<<<<<< HEAD
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150930075832')[0m
+  [1m[35m (2.3ms)[0m  COMMIT
+Migrating to CreateFeedbacks (20150930080044)
+  [1m[36m (8.4ms)[0m  [1mCREATE TABLE `feedbacks` (`id` int(11) auto_increment PRIMARY KEY, `observation` text, `datecreated` datetime, `reservation_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_feedbacks_on_reservation_id`  (`reservation_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (16.7ms)[0m  ALTER TABLE `feedbacks` ADD CONSTRAINT `fk_rails_996f0dd441`
+=======
   [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150930075832')[0m
   [1m[35m (9.8ms)[0m  COMMIT
 Migrating to CreateFeedbacks (20150930080044)
   [1m[36m (30.0ms)[0m  [1mCREATE TABLE `feedbacks` (`id` int(11) auto_increment PRIMARY KEY, `observation` text, `datecreated` datetime, `reservation_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_feedbacks_on_reservation_id`  (`reservation_id`) ) ENGINE=InnoDB[0m
   [1m[35m (75.5ms)[0m  ALTER TABLE `feedbacks` ADD CONSTRAINT `fk_rails_996f0dd441`
+>>>>>>> 7a5c87dde23d98eac490080ad483b87ccda6ccef
 FOREIGN KEY (`reservation_id`)
   REFERENCES `reservations` (`id`)
 
   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+<<<<<<< HEAD
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150930080044')
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
   [1m[35mSQL (4.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150930080044')
   [1m[36m (9.7ms)[0m  [1mCOMMIT[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
   [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+>>>>>>> 7a5c87dde23d98eac490080ad483b87ccda6ccef
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -536,8 +583,13 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiexpress_development'
   AND fk.table_name = 'drivers'
 [0m
+<<<<<<< HEAD
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `drivers`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
   [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `drivers`
   [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+>>>>>>> 7a5c87dde23d98eac490080ad483b87ccda6ccef
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -546,8 +598,13 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiexpress_development'
   AND fk.table_name = 'feedbacks'
 [0m
+<<<<<<< HEAD
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `feedbacks`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
   [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `feedbacks`
   [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+>>>>>>> 7a5c87dde23d98eac490080ad483b87ccda6ccef
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -607,6 +664,180 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'vehicles'
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `vehicles`
+<<<<<<< HEAD
+
+
+Started GET "/" for 190.233.151.148 at 2015-09-30 08:36:41 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1300ms (Views: 1289.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 190.233.151.148 at 2015-09-30 08:36:44 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-77d963462a71b85aa6c39f0110994006fed4301154d937da52eb3884ff813853.css?body=1" for 190.233.151.148 at 2015-09-30 08:36:44 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-c1a8821f7eb1b195061d7706930814ecc6bd44db4c68f208da5fe14845fa11ea.css?body=1" for 190.233.151.148 at 2015-09-30 08:36:44 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.233.151.148 at 2015-09-30 08:36:44 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.233.151.148 at 2015-09-30 08:36:44 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.233.151.148 at 2015-09-30 08:36:44 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.233.151.148 at 2015-09-30 08:36:44 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.233.151.148 at 2015-09-30 08:36:44 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-850ccd04bc4756e4259024ed51aa693714c6317c5c32f8afec994db18a947466.css?body=1" for 190.233.151.148 at 2015-09-30 08:36:44 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.233.151.148 at 2015-09-30 08:36:44 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.233.151.148 at 2015-09-30 08:36:44 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 190.233.151.148 at 2015-09-30 08:36:45 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:45 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:45 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.233.151.148 at 2015-09-30 08:36:45 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:45 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.233.151.148 at 2015-09-30 08:36:45 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:45 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:45 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:45 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:45 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:45 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:45 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:46 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:46 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:46 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:46 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:46 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:46 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:46 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:46 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:46 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:46 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:46 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:47 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:47 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:47 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:47 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:47 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:47 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.233.151.148 at 2015-09-30 08:36:47 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
   [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
@@ -689,6 +920,7 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'vehicles'
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `vehicles`
+<<<<<<< HEAD
 
 
 Started GET "/" for 181.65.27.199 at 2015-09-30 08:40:54 +0000
@@ -1296,3 +1528,6 @@ ActionController::RoutingError (No route matches [GET] "/path1"):
   Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
   Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
   Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.5ms)
+=======
+>>>>>>> 01e1e1dd858e2835af1407390b189037b64a0da5
+>>>>>>> 7f87602f896ab129e75b93479646e2f772044982
