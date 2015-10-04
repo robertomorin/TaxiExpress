@@ -921,3 +921,35 @@ WHERE fk.referenced_column_name is not null
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `vehicles`
 >>>>>>> 01e1e1dd858e2835af1407390b189037b64a0da5
+
+
+Started GET "/" for 190.233.151.148 at 2015-09-30 08:45:29 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 525ms (Views: 512.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paymenttypes" for 190.233.151.148 at 2015-09-30 08:45:45 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PaymenttypesController#index as HTML
+  [1m[35mPaymenttype Load (0.3ms)[0m  SELECT `paymenttypes`.* FROM `paymenttypes`
+  Rendered paymenttypes/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 348ms (Views: 343.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/statuses" for 190.233.151.148 at 2015-09-30 08:46:11 +0000
+Cannot render console from 190.233.151.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.5ms)[0m  [1mSELECT `statuses`.* FROM `statuses`[0m
+  Rendered statuses/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 251ms (Views: 246.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/paymenttypes" for 200.0.118.173 at 2015-10-01 00:21:51 +0000
+Cannot render console from 200.0.118.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PaymenttypesController#index as HTML
+  [1m[35mPaymenttype Load (23.1ms)[0m  SELECT `paymenttypes`.* FROM `paymenttypes`
+  Rendered paymenttypes/index.html.erb within layouts/application (485.6ms)
+Completed 200 OK in 12064ms (Views: 11652.0ms | ActiveRecord: 23.1ms)
