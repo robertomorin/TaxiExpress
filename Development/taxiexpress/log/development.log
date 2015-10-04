@@ -1724,9 +1724,988 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'vehicles'
 [0m
   [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `vehicles`
+<<<<<<< HEAD
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
   [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+
+
+Started GET "/" for 190.232.70.181 at 2015-10-04 22:46:14 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 577ms (Views: 566.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 190.232.70.181 at 2015-10-04 22:46:27 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 426ms (Views: 424.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 190.232.70.181 at 2015-10-04 22:46:28 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 244ms (Views: 242.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/favicon.ico" for 190.232.70.181 at 2015-10-04 22:46:29 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (85.0ms)
+
+
+Started GET "/" for 190.232.70.181 at 2015-10-04 22:50:23 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (0.8ms)
+Completed 200 OK in 222ms (Views: 221.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-77d963462a71b85aa6c39f0110994006fed4301154d937da52eb3884ff813853.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:24 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-c1a8821f7eb1b195061d7706930814ecc6bd44db4c68f208da5fe14845fa11ea.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:24 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:24 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:24 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:24 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-850ccd04bc4756e4259024ed51aa693714c6317c5c32f8afec994db18a947466.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:25 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:25 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:25 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:25 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:25 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:25 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:25 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:25 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:25 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:25 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:25 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:25 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:26 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:26 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:26 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:26 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:26 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:26 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:26 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:26 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:26 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:26 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:26 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:26 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:27 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:27 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:27 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:27 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:27 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:27 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:27 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:27 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:27 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:27 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:28 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:28 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 190.232.70.181 at 2015-10-04 22:50:54 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (0.9ms)
+Completed 200 OK in 291ms (Views: 290.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-77d963462a71b85aa6c39f0110994006fed4301154d937da52eb3884ff813853.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:55 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:55 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-c1a8821f7eb1b195061d7706930814ecc6bd44db4c68f208da5fe14845fa11ea.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:55 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:55 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-850ccd04bc4756e4259024ed51aa693714c6317c5c32f8afec994db18a947466.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:56 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:57 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:57 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:57 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:57 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:57 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:57 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:57 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 190.232.70.181 at 2015-10-04 22:50:57 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:57 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:57 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:57 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:57 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:57 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:57 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:58 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:58 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:58 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:58 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:50:58 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/vehicles" for 190.232.70.181 at 2015-10-04 22:51:00 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  [1m[35mVehicle Load (0.3ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  Rendered vehicles/index.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_menu.html.erb (1.2ms)
+Completed 200 OK in 267ms (Views: 262.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/drivers" for 190.232.70.181 at 2015-10-04 22:51:01 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DriversController#index as HTML
+  [1m[36mDriver Load (0.4ms)[0m  [1mSELECT `drivers`.* FROM `drivers`[0m
+  Rendered drivers/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 319ms (Views: 312.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/vehicles" for 190.232.70.181 at 2015-10-04 22:51:03 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  [1m[35mVehicle Load (0.2ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  Rendered vehicles/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 317ms (Views: 315.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vehicles" for 190.232.70.181 at 2015-10-04 22:51:32 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  [1m[36mVehicle Load (0.2ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  Rendered vehicles/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+Completed 200 OK in 295ms (Views: 292.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-77d963462a71b85aa6c39f0110994006fed4301154d937da52eb3884ff813853.css?body=1" for 190.232.70.181 at 2015-10-04 22:51:32 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:51:32 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-c1a8821f7eb1b195061d7706930814ecc6bd44db4c68f208da5fe14845fa11ea.css?body=1" for 190.232.70.181 at 2015-10-04 22:51:32 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 190.232.70.181 at 2015-10-04 22:51:33 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:51:33 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:51:33 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:51:33 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-850ccd04bc4756e4259024ed51aa693714c6317c5c32f8afec994db18a947466.css?body=1" for 190.232.70.181 at 2015-10-04 22:51:33 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:51:33 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:51:33 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:51:33 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:51:33 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.181 at 2015-10-04 22:51:33 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 190.232.70.181 at 2015-10-04 22:51:33 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:33 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:33 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:33 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:33 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:33 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:34 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:34 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:34 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:34 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:34 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:34 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:34 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:34 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:34 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:34 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:34 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:34 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:34 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:34 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:34 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:35 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:35 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:35 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:35 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:35 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:35 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 190.232.70.181 at 2015-10-04 22:51:36 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/drivers" for 190.232.70.181 at 2015-10-04 22:51:37 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DriversController#index as HTML
+  [1m[35mDriver Load (0.1ms)[0m  SELECT `drivers`.* FROM `drivers`
+  Rendered drivers/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+Completed 200 OK in 261ms (Views: 259.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 190.232.70.181 at 2015-10-04 22:51:39 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+Completed 200 OK in 262ms (Views: 261.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/path1" for 190.232.70.181 at 2015-10-04 22:51:41 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/path1"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.1ms)
+
+
+Started GET "/path1" for 190.232.70.181 at 2015-10-04 22:51:42 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/path1"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.4ms)
+
+
+Started GET "/path2" for 190.232.70.181 at 2015-10-04 22:51:42 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/path2"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.9ms)
+
+
+Started GET "/" for 190.232.70.181 at 2015-10-04 22:51:46 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+Completed 200 OK in 248ms (Views: 246.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/path3" for 190.232.70.181 at 2015-10-04 22:51:47 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/path3"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (64.4ms)
+
+
+Started GET "/path3" for 190.232.70.181 at 2015-10-04 22:51:48 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/path3"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.3ms)
+
+
+Started GET "/path4" for 190.232.70.181 at 2015-10-04 22:51:49 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/path4"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.3ms)
+
+
+Started GET "/path4" for 190.232.70.181 at 2015-10-04 22:51:51 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/path4"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.8ms)
+
+
+Started GET "/vehicles" for 190.232.70.181 at 2015-10-04 22:51:53 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  [1m[36mVehicle Load (0.2ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  Rendered vehicles/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+Completed 200 OK in 277ms (Views: 275.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 190.232.70.181 at 2015-10-04 22:51:54 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+Completed 200 OK in 253ms (Views: 252.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 190.232.70.181 at 2015-10-04 23:02:09 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddDeviseToUsers (20151004225913)
+  [1m[35m (258.7ms)[0m  ALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL
+  [1m[36m (86.4ms)[0m  [1mALTER TABLE `users` ADD `encrypted_password` varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (71.5ms)[0m  ALTER TABLE `users` ADD `reset_password_token` varchar(255)
+  [1m[36m (76.0ms)[0m  [1mALTER TABLE `users` ADD `reset_password_sent_at` datetime[0m
+  [1m[35m (79.3ms)[0m  ALTER TABLE `users` ADD `remember_created_at` datetime
+  [1m[36m (77.1ms)[0m  [1mALTER TABLE `users` ADD `sign_in_count` int(11) DEFAULT 0 NOT NULL[0m
+  [1m[35m (72.3ms)[0m  ALTER TABLE `users` ADD `current_sign_in_at` datetime
+  [1m[36m (82.0ms)[0m  [1mALTER TABLE `users` ADD `last_sign_in_at` datetime[0m
+  [1m[35m (91.5ms)[0m  ALTER TABLE `users` ADD `current_sign_in_ip` varchar(255)
+  [1m[36m (95.3ms)[0m  [1mALTER TABLE `users` ADD `last_sign_in_ip` varchar(255)[0m
+  [1m[35m (54.1ms)[0m  CREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) 
+  [1m[36m (48.5ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (8.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151004225913')[0m
+  [1m[35m (9.1ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (5.7ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> 9f03c2e3a6e907af38a70f2d4fb43a75aff2ef0c
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -1734,9 +2713,15 @@ FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiexpress_development'
   AND fk.table_name = 'drivers'
+<<<<<<< HEAD
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `drivers`
   [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `drivers`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> 9f03c2e3a6e907af38a70f2d4fb43a75aff2ef0c
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -1744,9 +2729,15 @@ FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiexpress_development'
   AND fk.table_name = 'feedbacks'
+<<<<<<< HEAD
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `feedbacks`
   [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `feedbacks`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> 9f03c2e3a6e907af38a70f2d4fb43a75aff2ef0c
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -1754,9 +2745,15 @@ FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiexpress_development'
   AND fk.table_name = 'operators'
+<<<<<<< HEAD
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `operators`
   [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `operators`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> 9f03c2e3a6e907af38a70f2d4fb43a75aff2ef0c
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -1764,9 +2761,15 @@ FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiexpress_development'
   AND fk.table_name = 'paymenttypes'
+<<<<<<< HEAD
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `paymenttypes`
   [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+
+  [1m[36m (0.3ms)[0m  [1mSHOW CREATE TABLE `paymenttypes`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> 9f03c2e3a6e907af38a70f2d4fb43a75aff2ef0c
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -1774,9 +2777,15 @@ FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiexpress_development'
   AND fk.table_name = 'reservations'
+<<<<<<< HEAD
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `reservations`
   [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `reservations`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> 9f03c2e3a6e907af38a70f2d4fb43a75aff2ef0c
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -1784,9 +2793,15 @@ FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiexpress_development'
   AND fk.table_name = 'statuses'
+<<<<<<< HEAD
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `statuses`
   [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `statuses`[0m
+  [1m[35m (0.4ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> 9f03c2e3a6e907af38a70f2d4fb43a75aff2ef0c
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -1794,9 +2809,15 @@ FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiexpress_development'
   AND fk.table_name = 'users'
+<<<<<<< HEAD
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `users`
   [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+=======
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> 9f03c2e3a6e907af38a70f2d4fb43a75aff2ef0c
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -1804,5 +2825,47 @@ FROM information_schema.key_column_usage fk
 WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiexpress_development'
   AND fk.table_name = 'vehicles'
+<<<<<<< HEAD
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `vehicles`
+=======
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `vehicles`[0m
+
+
+Started GET "/" for 190.232.70.181 at 2015-10-04 23:02:47 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_menu.html.erb (0.7ms)
+Completed 200 OK in 1492ms (Views: 1480.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-d1994c87603b908f2297bc161c8676f33e2beb81b30eb3d0957cdf7f3ce735be.css?body=1" for 190.232.70.181 at 2015-10-04 23:02:49 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 190.232.70.181 at 2015-10-04 23:03:11 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 503ms (Views: 501.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 190.232.70.181 at 2015-10-04 23:03:19 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"dmin"}
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 190.232.70.181 at 2015-10-04 23:03:19 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/shared/_links.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/sessions/new.html.erb within layouts/application (37.8ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 589ms (Views: 540.1ms | ActiveRecord: 26.1ms)
+>>>>>>> 9f03c2e3a6e907af38a70f2d4fb43a75aff2ef0c
