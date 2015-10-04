@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  mount RailsAdmin::Engine => '/a', as: 'rails_admin'
+  devise_for :users
   resources :feedbacks
   resources :reservations
   resources :paymenttypes

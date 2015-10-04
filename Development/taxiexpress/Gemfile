@@ -48,3 +48,11 @@ gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 
 gem 'simple_form'
+
+# Authentication Management
+gem 'devise'
+gem 'devise-bootstrap-views'
+
+
+# Admin Management
+gem 'rails_admin'
