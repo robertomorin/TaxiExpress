@@ -4187,6 +4187,7 @@ Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.
 
 Started GET "/assets/logo-81f6900344c483fca85625c85d4f95547c84c07e0d1ae2fd2b1387a4316a4bed.png" for 181.65.27.199 at 2015-10-05 00:16:47 +0000
 Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+<<<<<<< HEAD
 
 
 Started GET "/" for 190.237.183.162 at 2015-10-05 00:33:48 +0000
@@ -4310,6 +4311,193 @@ Migrating to AddDeviseToUsers (20151004225913)
   [1m[35m (0.1ms)[0m  BEGIN
   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151004225913')[0m
   [1m[35m (3.9ms)[0m  COMMIT
+=======
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20151005011350)
+  [1m[35m (2.5ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `lastname` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+Mysql2::Error: Table 'users' already exists: CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `lastname` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (23.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (66.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (3.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateVehicles (20150930063414)
+  [1m[35m (23.6ms)[0m  CREATE TABLE `vehicles` (`id` int(11) auto_increment PRIMARY KEY, `trademark` varchar(255), `model` varchar(255), `creationyear` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150930063414')
+  [1m[36m (11.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateOperators (20150930063505)
+  [1m[35m (30.9ms)[0m  CREATE TABLE `operators` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `lastname` varchar(255), `mail` varchar(255), `password` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150930063505')
+  [1m[36m (9.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateDrivers (20150930063701)
+  [1m[35m (34.6ms)[0m  CREATE TABLE `drivers` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `lastname` varchar(255), `email` varchar(255), `password` varchar(255), `vehicle_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_drivers_on_vehicle_id`  (`vehicle_id`) ) ENGINE=InnoDB
+  [1m[36m (87.4ms)[0m  [1mALTER TABLE `drivers` ADD CONSTRAINT `fk_rails_1a908cd823`
+FOREIGN KEY (`vehicle_id`)
+  REFERENCES `vehicles` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (3.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150930063701')[0m
+  [1m[35m (10.5ms)[0m  COMMIT
+Migrating to CreateStatuses (20150930070845)
+  [1m[36m (20.7ms)[0m  [1mCREATE TABLE `statuses` (`id` int(11) auto_increment PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (6.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150930070845')[0m
+  [1m[35m (10.4ms)[0m  COMMIT
+Migrating to CreatePaymenttypes (20150930071512)
+  [1m[36m (30.8ms)[0m  [1mCREATE TABLE `paymenttypes` (`id` int(11) auto_increment PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (3.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150930071512')[0m
+  [1m[35m (10.2ms)[0m  COMMIT
+Migrating to CreateReservations (20150930075832)
+  [1m[36m (24.3ms)[0m  [1mCREATE TABLE `reservations` (`id` int(11) auto_increment PRIMARY KEY, `passengersquantity` int(11), `vehicletype` text, `originaddress` text, `destinationaddress` text, `price` decimal, `date` datetime, `vehicle_id` int(11), `user_id` int(11), `operator_id` int(11), `status_id` int(11), `paymenttype_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_reservations_on_vehicle_id`  (`vehicle_id`) ,  INDEX `index_reservations_on_user_id`  (`user_id`) ,  INDEX `index_reservations_on_operator_id`  (`operator_id`) ,  INDEX `index_reservations_on_status_id`  (`status_id`) ,  INDEX `index_reservations_on_paymenttype_id`  (`paymenttype_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (74.9ms)[0m  ALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_fadbcd7cf7`
+FOREIGN KEY (`vehicle_id`)
+  REFERENCES `vehicles` (`id`)
+
+  [1m[36m (23.8ms)[0m  [1mALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_48a92fce51`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+Mysql2::Error: Can't create table 'taxiexpress_development.#sql-68d_2e' (errno: 150): ALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_48a92fce51`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateReservations (20150930075832)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateFeedbacks (20150930080044)
+  [1m[35m (28.3ms)[0m  CREATE TABLE `feedbacks` (`id` int(11) auto_increment PRIMARY KEY, `observation` text, `datecreated` datetime, `reservation_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_feedbacks_on_reservation_id`  (`reservation_id`) ) ENGINE=InnoDB
+  [1m[36m (79.5ms)[0m  [1mALTER TABLE `feedbacks` ADD CONSTRAINT `fk_rails_996f0dd441`
+FOREIGN KEY (`reservation_id`)
+  REFERENCES `reservations` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150930080044')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+Migrating to AddDeviseToUsers (20151004225913)
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL[0m
+Mysql2::Error: Table 'taxiexpress_development.users' doesn't exist: ALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddDeviseToUsers (20151004225913)
+  [1m[35m (1.0ms)[0m  ALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL
+Mysql2::Error: Table 'taxiexpress_development.users' doesn't exist: ALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddDeviseToUsers (20151004225913)
+  [1m[35m (0.8ms)[0m  ALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL
+Mysql2::Error: Table 'taxiexpress_development.users' doesn't exist: ALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddDeviseToUsers (20151004225913)
+  [1m[35m (0.6ms)[0m  ALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL
+Mysql2::Error: Table 'taxiexpress_development.users' doesn't exist: ALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddDeviseToUsers (20151004225913)
+  [1m[35m (0.8ms)[0m  ALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL
+Mysql2::Error: Table 'taxiexpress_development.users' doesn't exist: ALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20151005014444)
+  [1m[35m (22.5ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `lastname` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151005014444')
+  [1m[36m (8.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (2.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'drivers'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `drivers`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'feedbacks'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `feedbacks`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'operators'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `operators`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'paymenttypes'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `paymenttypes`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'reservations'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `reservations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'statuses'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `statuses`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `users`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'vehicles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `vehicles`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddDeviseToUsers (20151005014534)
+  [1m[35m (87.7ms)[0m  ALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL
+  [1m[36m (67.5ms)[0m  [1mALTER TABLE `users` ADD `encrypted_password` varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (67.4ms)[0m  ALTER TABLE `users` ADD `reset_password_token` varchar(255)
+  [1m[36m (68.2ms)[0m  [1mALTER TABLE `users` ADD `reset_password_sent_at` datetime[0m
+  [1m[35m (67.4ms)[0m  ALTER TABLE `users` ADD `remember_created_at` datetime
+  [1m[36m (71.5ms)[0m  [1mALTER TABLE `users` ADD `sign_in_count` int(11) DEFAULT 0 NOT NULL[0m
+  [1m[35m (77.6ms)[0m  ALTER TABLE `users` ADD `current_sign_in_at` datetime
+  [1m[36m (73.8ms)[0m  [1mALTER TABLE `users` ADD `last_sign_in_at` datetime[0m
+  [1m[35m (74.0ms)[0m  ALTER TABLE `users` ADD `current_sign_in_ip` varchar(255)
+  [1m[36m (113.3ms)[0m  [1mALTER TABLE `users` ADD `last_sign_in_ip` varchar(255)[0m
+  [1m[35m (108.7ms)[0m  CREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) 
+  [1m[36m (71.6ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (7.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151005014534')[0m
+  [1m[35m (20.3ms)[0m  COMMIT
+>>>>>>> 2ad00383840702f3fdc21c88b30bd0398807cf3b
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
       ,fk.referenced_column_name as 'primary_key'
@@ -4341,7 +4529,11 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'operators'
 
   [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `operators`[0m
+<<<<<<< HEAD
   [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+=======
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+>>>>>>> 2ad00383840702f3fdc21c88b30bd0398807cf3b
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
       ,fk.constraint_name as 'name'
@@ -4370,7 +4562,11 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiexpress_development'
   AND fk.table_name = 'statuses'
 
+<<<<<<< HEAD
   [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `statuses`[0m
+=======
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `statuses`[0m
+>>>>>>> 2ad00383840702f3fdc21c88b30bd0398807cf3b
   [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
       ,fk.referenced_column_name as 'primary_key'
       ,fk.column_name as 'column'
@@ -4390,6 +4586,7 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'taxiexpress_development'
   AND fk.table_name = 'vehicles'
 
+<<<<<<< HEAD
   [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `vehicles`[0m
 
 
@@ -6585,3 +6782,6 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'vehicles'
 [0m
   [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `vehicles`
+=======
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `vehicles`[0m
+>>>>>>> 2ad00383840702f3fdc21c88b30bd0398807cf3b
