@@ -10,7 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-// = Requerir bootstrap-deslizante
+// = Requerir jQuery 
+// = requerir jquery.rambling.slider
+//= Requerir bootstrap-deslizante
 //= bootstrap
 //= camera.min
 //= jquery.easing.1.3
