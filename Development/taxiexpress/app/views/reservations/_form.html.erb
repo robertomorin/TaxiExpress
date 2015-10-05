@@ -1,0 +1,20 @@
+<%= simple_form_for(@reservation) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :passengersquantity %>
+    <%= f.input :vehicletype %>
+    <%= f.input :beginningadress %>
+    <%= f.input :destinationadress %>
+    <%= f.input :price %>
+    <%= f.association :vehicle %>
+    <%= f.association :user %>
+    <%= f.association :operator %>
+    <%= f.association :status %>
+    <%= f.association :paymenttype %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
