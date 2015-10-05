@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151005014534) do
+ActiveRecord::Schema.define(version: 20151005021345) do
 
   create_table "drivers", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -26,8 +26,7 @@ ActiveRecord::Schema.define(version: 20151005014534) do
   add_index "drivers", ["vehicle_id"], name: "index_drivers_on_vehicle_id", using: :btree
 
   create_table "feedbacks", force: :cascade do |t|
-    t.text     "observation",    limit: 65535
-    t.datetime "datecreated"
+    t.text     "description",    limit: 65535
     t.integer  "reservation_id", limit: 4
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
@@ -52,11 +51,10 @@ ActiveRecord::Schema.define(version: 20151005014534) do
 
   create_table "reservations", force: :cascade do |t|
     t.integer  "passengersquantity", limit: 4
-    t.text     "vehicletype",        limit: 65535
-    t.text     "originaddress",      limit: 65535
-    t.text     "destinationaddress", limit: 65535
+    t.string   "vehicletype",        limit: 255
+    t.text     "beginningadress",    limit: 65535
+    t.text     "destinationadress",  limit: 65535
     t.decimal  "price",                            precision: 10
-    t.datetime "date"
     t.integer  "vehicle_id",         limit: 4
     t.integer  "user_id",            limit: 4
     t.integer  "operator_id",        limit: 4
@@ -108,5 +106,9 @@ ActiveRecord::Schema.define(version: 20151005014534) do
 
   add_foreign_key "drivers", "vehicles"
   add_foreign_key "feedbacks", "reservations"
+  add_foreign_key "reservations", "operators"
+  add_foreign_key "reservations", "paymenttypes"
+  add_foreign_key "reservations", "statuses"
+  add_foreign_key "reservations", "users"
   add_foreign_key "reservations", "vehicles"
 end

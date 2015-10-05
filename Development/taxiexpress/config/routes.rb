@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
+  resources :feedbacks
+  resources :reservations
   devise_for :users
   resources :users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :feedbacks
   resources :paymenttypes
   resources :statuses
   resources :drivers
