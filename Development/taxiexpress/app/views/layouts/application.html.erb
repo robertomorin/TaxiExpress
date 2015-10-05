@@ -54,11 +54,11 @@
           </ul>
           <p class="navbar-text navbar-right">
             <% if current_user%>
-              Signed in as <%= current_user.name %>
+              Logueado como <%= current_user.name %>
               <%= " | " %>
-              <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+              <%= link_to "Cerrar Sesión", destroy_user_session_path, method: :delete %>
             <% else %>
-              <%= link_to "Sign in",new_user_session_path %>
+              <%= link_to "Iniciar Sesión",new_user_session_path %>
             <% end %>
           </p>
         </div>
