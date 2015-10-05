@@ -14638,4 +14638,579 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'vehicles'
 
   [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `vehicles`[0m
+<<<<<<< HEAD
 >>>>>>> 2ad00383840702f3fdc21c88b30bd0398807cf3b
+=======
+
+
+Started GET "/" for 190.232.70.181 at 2015-10-05 01:48:57 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_menu.html.erb (1.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 1047ms (Views: 1031.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 190.232.70.181 at 2015-10-05 01:49:05 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+Completed 200 OK in 404ms (Views: 403.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 190.232.70.181 at 2015-10-05 01:49:08 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/shared/_links.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/sessions/new.html.erb within layouts/application (73.5ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 476ms (Views: 466.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 190.232.70.181 at 2015-10-05 01:49:13 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/registrations/new.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 481ms (Views: 478.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 190.232.70.181 at 2015-10-05 01:49:14 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/registrations/new.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+Completed 200 OK in 478ms (Views: 476.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 190.232.70.181 at 2015-10-05 01:49:26 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IBiTpz9aTR6sy9C8DVzHW6WP0T0yV+SiTRe8gGpFw1Pz+9ux9qVz3otOPitO/PU804Jc1L+sZRyvCt/+J3b7SA==", "user"=>{"email"=>"rrios@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (3.7ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'rrios@gmail.com' LIMIT 1
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('rrios@gmail.com', '$2a$10$iJBPb1crmticLjgdoSIgUe76uOxPcQtPL81OVkfBexJlfhCnj9KTi', '2015-10-05 01:49:26', '2015-10-05 01:49:26')[0m
+  [1m[35m (7.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2015-10-05 01:49:26', `current_sign_in_at` = '2015-10-05 01:49:26', `last_sign_in_ip` = '190.232.70.181', `current_sign_in_ip` = '190.232.70.181', `sign_in_count` = 1, `updated_at` = '2015-10-05 01:49:26' WHERE `users`.`id` = 1
+  [1m[36m (4.5ms)[0m  [1mCOMMIT[0m
+Redirected to https://taxiexpress-rios1993.c9.io/
+Completed 302 Found in 174ms (ActiveRecord: 21.2ms)
+
+
+Started GET "/" for 190.232.70.181 at 2015-10-05 01:49:26 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 436ms (Views: 434.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin" for 190.232.70.181 at 2015-10-05 01:49:36 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (2.3ms)[0m  SELECT COUNT(*) FROM `drivers`
+  [1m[36mDriver Load (0.2ms)[0m  [1mSELECT  `drivers`.* FROM `drivers`  ORDER BY drivers.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `feedbacks`
+  [1m[36mFeedback Load (0.2ms)[0m  [1mSELECT  `feedbacks`.* FROM `feedbacks`  ORDER BY feedbacks.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `operators`
+  [1m[36mOperator Load (0.3ms)[0m  [1mSELECT  `operators`.* FROM `operators`  ORDER BY operators.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `paymenttypes`
+  [1m[36mPaymenttype Load (0.3ms)[0m  [1mSELECT  `paymenttypes`.* FROM `paymenttypes`  ORDER BY paymenttypes.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `statuses`
+  [1m[36mStatus Load (0.3ms)[0m  [1mSELECT  `statuses`.* FROM `statuses`  ORDER BY statuses.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `users`
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  ORDER BY users.updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `vehicles`
+  [1m[36mVehicle Load (0.2ms)[0m  [1mSELECT  `vehicles`.* FROM `vehicles`  ORDER BY vehicles.updated_at desc LIMIT 1[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (38.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_navigation.html.haml (8.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/pjax.html.haml (3.2ms)
+Completed 200 OK in 5090ms (Views: 4908.5ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/admin" for 190.232.70.181 at 2015-10-05 01:49:41 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `drivers`[0m
+  [1m[35mDriver Load (0.2ms)[0m  SELECT  `drivers`.* FROM `drivers`  ORDER BY drivers.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `feedbacks`[0m
+  [1m[35mFeedback Load (0.1ms)[0m  SELECT  `feedbacks`.* FROM `feedbacks`  ORDER BY feedbacks.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `operators`[0m
+  [1m[35mOperator Load (0.1ms)[0m  SELECT  `operators`.* FROM `operators`  ORDER BY operators.updated_at desc LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `paymenttypes`[0m
+  [1m[35mPaymenttype Load (0.1ms)[0m  SELECT  `paymenttypes`.* FROM `paymenttypes`  ORDER BY paymenttypes.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `statuses`[0m
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  `statuses`.* FROM `statuses`  ORDER BY statuses.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  ORDER BY users.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `vehicles`[0m
+  [1m[35mVehicle Load (0.1ms)[0m  SELECT  `vehicles`.* FROM `vehicles`  ORDER BY vehicles.updated_at desc LIMIT 1
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (23.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_navigation.html.haml (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (8.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/pjax.html.haml (1.9ms)
+Completed 200 OK in 638ms (Views: 618.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.181 at 2015-10-05 01:49:45 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users`  ORDER BY users.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (51.3ms)
+Completed 200 OK in 71ms (Views: 59.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/user/1/edit?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.181 at 2015-10-05 01:49:50 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_text.html.haml (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_datetime.html.haml (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_datetime.html.haml (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_datetime.html.haml (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_datetime.html.haml (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_submit_buttons.html.haml (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (74.4ms)
+Completed 200 OK in 98ms (Views: 89.0ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/admin/user/1/edit" for 190.232.70.181 at 2015-10-05 01:50:14 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fV0edEmWMu8BGscLTdhVT9RNKApb71J9VNdsDDSqPo6uvlZigGkMLyafKZwOeGcookCl49YU08O2yg9yeZkGlQ==", "user"=>{"name"=>"Richard", "lastname"=>"Rios", "email"=>"rrios@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]", "remember_created_at"=>"", "sign_in_count"=>"1", "current_sign_in_at"=>"October 05, 2015 01:49", "last_sign_in_at"=>"October 05, 2015 01:49", "current_sign_in_ip"=>"190.232.70.181", "last_sign_in_ip"=>"190.232.70.181"}, "return_to"=>"https://taxiexpress-rios1993.c9.io/admin/user", "_save"=>"", "model_name"=>"user", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.5ms)[0m  [1mUPDATE `users` SET `name` = 'Richard', `lastname` = 'Rios', `encrypted_password` = '$2a$10$/tUGJGaSkP.Nq3T5hSszDuN85JodJToxxaSY9pXaRv6wwUOLzT6Ky', `current_sign_in_at` = '2015-10-05 01:49:00', `last_sign_in_at` = '2015-10-05 01:49:00', `updated_at` = '2015-10-05 01:50:14' WHERE `users`.`id` = 1[0m
+  [1m[35m (13.1ms)[0m  COMMIT
+Redirected to https://taxiexpress-rios1993.c9.io/admin/user
+Completed 302 Found in 114ms (ActiveRecord: 16.0ms)
+
+
+Started GET "/admin/user" for 190.232.70.181 at 2015-10-05 01:50:14 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 190.232.70.181 at 2015-10-05 01:50:15 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/sessions/new.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+Completed 200 OK in 490ms (Views: 488.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 190.232.70.181 at 2015-10-05 01:50:24 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/sessions/new.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+Completed 200 OK in 371ms (Views: 369.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 190.232.70.181 at 2015-10-05 01:50:31 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"we+w411hdT+dX11KPX3CZoZmxDFREiTHUPHqUZ9035ASDPj1lJ5L/7ras91+3fAB8GtJ2NzppXmy7Ikv0kfniw==", "user"=>{"email"=>"rrios@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'rrios@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `current_sign_in_at` = '2015-10-05 01:50:31', `sign_in_count` = 2, `updated_at` = '2015-10-05 01:50:31' WHERE `users`.`id` = 1
+  [1m[36m (3.4ms)[0m  [1mCOMMIT[0m
+Redirected to https://taxiexpress-rios1993.c9.io/admin/user
+Completed 302 Found in 110ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/admin/user" for 190.232.70.181 at 2015-10-05 01:50:32 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users`  ORDER BY users.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (31.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_navigation.html.haml (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/pjax.html.haml (7.4ms)
+Completed 200 OK in 662ms (Views: 652.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 190.232.70.181 at 2015-10-05 01:50:37 +0000
+Cannot render console from 190.232.70.181! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 345ms (Views: 343.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (41.9ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (95.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateVehicles (20150930063414)
+  [1m[35m (19.2ms)[0m  CREATE TABLE `vehicles` (`id` int(11) auto_increment PRIMARY KEY, `trademark` varchar(255), `model` varchar(255), `creationyear` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150930063414')
+  [1m[36m (10.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateOperators (20150930063505)
+  [1m[35m (22.8ms)[0m  CREATE TABLE `operators` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `lastname` varchar(255), `mail` varchar(255), `password` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150930063505')
+  [1m[36m (10.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateDrivers (20150930063701)
+  [1m[35m (25.6ms)[0m  CREATE TABLE `drivers` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `lastname` varchar(255), `email` varchar(255), `password` varchar(255), `vehicle_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_drivers_on_vehicle_id`  (`vehicle_id`) ) ENGINE=InnoDB
+  [1m[36m (82.9ms)[0m  [1mALTER TABLE `drivers` ADD CONSTRAINT `fk_rails_1a908cd823`
+FOREIGN KEY (`vehicle_id`)
+  REFERENCES `vehicles` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150930063701')[0m
+  [1m[35m (10.5ms)[0m  COMMIT
+Migrating to CreateStatuses (20150930070845)
+  [1m[36m (18.9ms)[0m  [1mCREATE TABLE `statuses` (`id` int(11) auto_increment PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150930070845')[0m
+  [1m[35m (10.1ms)[0m  COMMIT
+Migrating to CreatePaymenttypes (20150930071512)
+  [1m[36m (18.6ms)[0m  [1mCREATE TABLE `paymenttypes` (`id` int(11) auto_increment PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150930071512')[0m
+  [1m[35m (10.8ms)[0m  COMMIT
+Migrating to CreateFeedbacks (20150930080044)
+  [1m[36m (133.4ms)[0m  [1mCREATE TABLE `feedbacks` (`id` int(11) auto_increment PRIMARY KEY, `observation` text, `datecreated` datetime, `reservation_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_feedbacks_on_reservation_id`  (`reservation_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (23.8ms)[0m  ALTER TABLE `feedbacks` ADD CONSTRAINT `fk_rails_996f0dd441`
+FOREIGN KEY (`reservation_id`)
+  REFERENCES `reservations` (`id`)
+
+Mysql2::Error: Can't create table 'taxiexpress_development.#sql-68d_3d' (errno: 150): ALTER TABLE `feedbacks` ADD CONSTRAINT `fk_rails_996f0dd441`
+FOREIGN KEY (`reservation_id`)
+  REFERENCES `reservations` (`id`)
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20151005014444)
+  [1m[35m (28.2ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `lastname` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151005014444')
+  [1m[36m (9.2ms)[0m  [1mCOMMIT[0m
+Migrating to AddDeviseToUsers (20151005014534)
+  [1m[35m (61.8ms)[0m  ALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL
+  [1m[36m (68.4ms)[0m  [1mALTER TABLE `users` ADD `encrypted_password` varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (76.0ms)[0m  ALTER TABLE `users` ADD `reset_password_token` varchar(255)
+  [1m[36m (67.1ms)[0m  [1mALTER TABLE `users` ADD `reset_password_sent_at` datetime[0m
+  [1m[35m (55.1ms)[0m  ALTER TABLE `users` ADD `remember_created_at` datetime
+  [1m[36m (68.3ms)[0m  [1mALTER TABLE `users` ADD `sign_in_count` int(11) DEFAULT 0 NOT NULL[0m
+  [1m[35m (79.5ms)[0m  ALTER TABLE `users` ADD `current_sign_in_at` datetime
+  [1m[36m (79.9ms)[0m  [1mALTER TABLE `users` ADD `last_sign_in_at` datetime[0m
+  [1m[35m (72.2ms)[0m  ALTER TABLE `users` ADD `current_sign_in_ip` varchar(255)
+  [1m[36m (118.6ms)[0m  [1mALTER TABLE `users` ADD `last_sign_in_ip` varchar(255)[0m
+  [1m[35m (150.5ms)[0m  CREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) 
+  [1m[36m (53.0ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151005014534')[0m
+  [1m[35m (3.5ms)[0m  COMMIT
+Migrating to CreateReservations (20151005020624)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateReservations (20151005021219)
+  [1m[35m (30.6ms)[0m  CREATE TABLE `reservations` (`id` int(11) auto_increment PRIMARY KEY, `passengersquantity` int(11), `vehicletype` varchar(255), `beginningadress` text, `destinationadress` text, `price` decimal, `vehicle_id` int(11), `user_id` int(11), `operator_id` int(11), `status_id` int(11), `paymenttype_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_reservations_on_vehicle_id`  (`vehicle_id`) ,  INDEX `index_reservations_on_user_id`  (`user_id`) ,  INDEX `index_reservations_on_operator_id`  (`operator_id`) ,  INDEX `index_reservations_on_status_id`  (`status_id`) ,  INDEX `index_reservations_on_paymenttype_id`  (`paymenttype_id`) ) ENGINE=InnoDB
+  [1m[36m (79.8ms)[0m  [1mALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_fadbcd7cf7`
+FOREIGN KEY (`vehicle_id`)
+  REFERENCES `vehicles` (`id`)
+[0m
+  [1m[35m (71.5ms)[0m  ALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_48a92fce51`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+
+  [1m[36m (54.9ms)[0m  [1mALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_20c2b68908`
+FOREIGN KEY (`operator_id`)
+  REFERENCES `operators` (`id`)
+[0m
+  [1m[35m (63.8ms)[0m  ALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_1bd997b878`
+FOREIGN KEY (`status_id`)
+  REFERENCES `statuses` (`id`)
+
+  [1m[36m (59.5ms)[0m  [1mALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_2f3d031103`
+FOREIGN KEY (`paymenttype_id`)
+  REFERENCES `paymenttypes` (`id`)
+[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151005021219')[0m
+  [1m[35m (7.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'drivers'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `drivers`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'feedbacks'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `feedbacks`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'operators'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `operators`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'paymenttypes'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `paymenttypes`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'reservations'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `reservations`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'statuses'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `statuses`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'users'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'vehicles'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `vehicles`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateFeedbacks (20151005021345)
+  [1m[36m (20.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (66.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateVehicles (20150930063414)
+  [1m[35m (14.3ms)[0m  CREATE TABLE `vehicles` (`id` int(11) auto_increment PRIMARY KEY, `trademark` varchar(255), `model` varchar(255), `creationyear` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (26.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150930063414')
+  [1m[36m (9.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateOperators (20150930063505)
+  [1m[35m (36.4ms)[0m  CREATE TABLE `operators` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `lastname` varchar(255), `mail` varchar(255), `password` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150930063505')
+  [1m[36m (12.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateDrivers (20150930063701)
+  [1m[35m (29.3ms)[0m  CREATE TABLE `drivers` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `lastname` varchar(255), `email` varchar(255), `password` varchar(255), `vehicle_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_drivers_on_vehicle_id`  (`vehicle_id`) ) ENGINE=InnoDB
+  [1m[36m (70.7ms)[0m  [1mALTER TABLE `drivers` ADD CONSTRAINT `fk_rails_1a908cd823`
+FOREIGN KEY (`vehicle_id`)
+  REFERENCES `vehicles` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150930063701')[0m
+  [1m[35m (9.7ms)[0m  COMMIT
+Migrating to CreateStatuses (20150930070845)
+  [1m[36m (13.5ms)[0m  [1mCREATE TABLE `statuses` (`id` int(11) auto_increment PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (6.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150930070845')[0m
+  [1m[35m (9.4ms)[0m  COMMIT
+Migrating to CreatePaymenttypes (20150930071512)
+  [1m[36m (26.1ms)[0m  [1mCREATE TABLE `paymenttypes` (`id` int(11) auto_increment PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150930071512')[0m
+  [1m[35m (15.0ms)[0m  COMMIT
+Migrating to CreateUsers (20151005014444)
+  [1m[36m (26.0ms)[0m  [1mCREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `lastname` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151005014444')[0m
+  [1m[35m (2.6ms)[0m  COMMIT
+Migrating to AddDeviseToUsers (20151005014534)
+  [1m[36m (54.2ms)[0m  [1mALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (43.0ms)[0m  ALTER TABLE `users` ADD `encrypted_password` varchar(255) DEFAULT '' NOT NULL
+  [1m[36m (55.8ms)[0m  [1mALTER TABLE `users` ADD `reset_password_token` varchar(255)[0m
+  [1m[35m (42.7ms)[0m  ALTER TABLE `users` ADD `reset_password_sent_at` datetime
+  [1m[36m (40.9ms)[0m  [1mALTER TABLE `users` ADD `remember_created_at` datetime[0m
+  [1m[35m (51.3ms)[0m  ALTER TABLE `users` ADD `sign_in_count` int(11) DEFAULT 0 NOT NULL
+  [1m[36m (43.9ms)[0m  [1mALTER TABLE `users` ADD `current_sign_in_at` datetime[0m
+  [1m[35m (55.8ms)[0m  ALTER TABLE `users` ADD `last_sign_in_at` datetime
+  [1m[36m (43.0ms)[0m  [1mALTER TABLE `users` ADD `current_sign_in_ip` varchar(255)[0m
+  [1m[35m (71.8ms)[0m  ALTER TABLE `users` ADD `last_sign_in_ip` varchar(255)
+  [1m[36m (42.7ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (37.7ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) 
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151005014534')
+  [1m[36m (11.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateReservations (20151005021219)
+  [1m[35m (25.1ms)[0m  CREATE TABLE `reservations` (`id` int(11) auto_increment PRIMARY KEY, `passengersquantity` int(11), `vehicletype` varchar(255), `beginningadress` text, `destinationadress` text, `price` decimal, `vehicle_id` int(11), `user_id` int(11), `operator_id` int(11), `status_id` int(11), `paymenttype_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_reservations_on_vehicle_id`  (`vehicle_id`) ,  INDEX `index_reservations_on_user_id`  (`user_id`) ,  INDEX `index_reservations_on_operator_id`  (`operator_id`) ,  INDEX `index_reservations_on_status_id`  (`status_id`) ,  INDEX `index_reservations_on_paymenttype_id`  (`paymenttype_id`) ) ENGINE=InnoDB
+  [1m[36m (75.4ms)[0m  [1mALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_fadbcd7cf7`
+FOREIGN KEY (`vehicle_id`)
+  REFERENCES `vehicles` (`id`)
+[0m
+  [1m[35m (62.2ms)[0m  ALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_48a92fce51`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+
+  [1m[36m (35.0ms)[0m  [1mALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_20c2b68908`
+FOREIGN KEY (`operator_id`)
+  REFERENCES `operators` (`id`)
+[0m
+  [1m[35m (36.4ms)[0m  ALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_1bd997b878`
+FOREIGN KEY (`status_id`)
+  REFERENCES `statuses` (`id`)
+
+  [1m[36m (51.2ms)[0m  [1mALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_2f3d031103`
+FOREIGN KEY (`paymenttype_id`)
+  REFERENCES `paymenttypes` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151005021219')[0m
+  [1m[35m (9.2ms)[0m  COMMIT
+Migrating to CreateFeedbacks (20151005021345)
+  [1m[36m (25.7ms)[0m  [1mCREATE TABLE `feedbacks` (`id` int(11) auto_increment PRIMARY KEY, `description` text, `reservation_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_feedbacks_on_reservation_id`  (`reservation_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (35.8ms)[0m  ALTER TABLE `feedbacks` ADD CONSTRAINT `fk_rails_996f0dd441`
+FOREIGN KEY (`reservation_id`)
+  REFERENCES `reservations` (`id`)
+
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151005021345')
+  [1m[36m (13.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'drivers'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `drivers`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'feedbacks'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `feedbacks`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'operators'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `operators`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'paymenttypes'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `paymenttypes`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'reservations'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `reservations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'statuses'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `statuses`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `users`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'vehicles'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `vehicles`
+>>>>>>> 6bc340d5661eaa43515ad0e1d6feeebf258b79f7
