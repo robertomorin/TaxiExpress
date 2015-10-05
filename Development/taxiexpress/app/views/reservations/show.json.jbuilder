@@ -1,1 +1,0 @@
-json.extract! @reservation, :id, :passengersquantity, :vehicletype, :originaddress, :destinationaddress, :price, :date, :vehicle_id, :user_id, :operator_id, :status_id, :paymenttype_id, :created_at, :updated_at
