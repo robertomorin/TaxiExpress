@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  mount RailsAdmin::Engine => '/a', as: 'rails_admin'
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   resources :feedbacks
   resources :reservations
