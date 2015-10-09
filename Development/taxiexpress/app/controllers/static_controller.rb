@@ -1,4 +1,6 @@
 class StaticController < ApplicationController
+  layout 'static'
+  
   def quienes
   end
 
