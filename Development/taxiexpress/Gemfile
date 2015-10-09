@@ -55,3 +55,6 @@ gem 'devise-bootstrap-views'
 
 # Admin Management
 gem 'rails_admin'
+
+
+gem 'bootstrap-slider-rails'

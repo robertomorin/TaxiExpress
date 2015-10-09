@@ -13,4 +13,8 @@
  *= require_devise_bootstrap_views_less
  *= require_tree .
  *= require_self
+ *= bootstrap
+ *= lightbox
+ *= slider
+ *= style
  */
