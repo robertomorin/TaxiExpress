@@ -55189,3 +55189,1539 @@ Processing by ReservationsController#index as HTML
   Rendered layouts/_menu.html.erb (0.3ms)
 Completed 200 OK in 467ms (Views: 464.3ms | ActiveRecord: 0.3ms)
 >>>>>>> bcda077dae1e77ce6b1837cf8a8fbd4f6fc2627a
+
+
+Started GET "/quienes" for 181.65.27.199 at 2015-10-10 07:19:25 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StaticController#quienes as HTML
+  Parameters: {"alias"=>"quienes"}
+  Rendered static/quienes.html.erb within layouts/static (2.7ms)
+  Rendered layouts/_menu.html.erb (6.6ms)
+Completed 200 OK in 736ms (Views: 724.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-125790dddab74142339daa131ed49a61f694241a96a2b548011d872a4108770e.css?body=1" for 181.65.27.199 at 2015-10-10 07:19:26 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:19:26 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:19:26 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:19:26 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:19:26 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:19:26 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:19:26 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:19:26 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-850ccd04bc4756e4259024ed51aa693714c6317c5c32f8afec994db18a947466.css?body=1" for 181.65.27.199 at 2015-10-10 07:19:26 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:19:26 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:19:26 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:19:26 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-9cdaafd8bb8e8be90d44197aadcf52b6faf2abfe64929c49b11b756d156968f3.css?body=1" for 181.65.27.199 at 2015-10-10 07:19:26 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:26 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:26 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:26 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:27 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:27 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:27 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:27 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:27 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:27 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:27 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:27 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:27 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:27 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:27 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:27 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:27 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:27 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:28 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:28 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:28 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:28 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:28 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:28 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:28 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-8eeb9524778427f38c97c10cb218f4b04621c4ae042820ebd2024944be4170d2.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:28 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:28 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/logo-81f6900344c483fca85625c85d4f95547c84c07e0d1ae2fd2b1387a4316a4bed.png" for 181.65.27.199 at 2015-10-10 07:19:28 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:19:28 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/quienes" for 181.65.27.199 at 2015-10-10 07:19:42 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#quienes as HTML
+  Parameters: {"alias"=>"quienes"}
+  Rendered static/quienes.html.erb within layouts/static (0.3ms)
+  Rendered layouts/_menu.html.erb (3.6ms)
+Completed 200 OK in 328ms (Views: 327.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/servicios" for 181.65.27.199 at 2015-10-10 07:19:45 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#servicios as HTML
+  Parameters: {"alias"=>"servicios"}
+  Rendered static/servicios.html.erb within layouts/static (0.3ms)
+  Rendered layouts/_menu.html.erb (2.4ms)
+Completed 200 OK in 342ms (Views: 341.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 181.65.27.199 at 2015-10-10 07:19:48 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_menu.html.erb (2.7ms)
+Completed 200 OK in 347ms (Views: 346.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 181.65.27.199 at 2015-10-10 07:19:50 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_menu.html.erb (2.4ms)
+Completed 200 OK in 316ms (Views: 315.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 181.65.27.199 at 2015-10-10 07:20:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_menu.html.erb (4.9ms)
+Completed 200 OK in 398ms (Views: 397.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-125790dddab74142339daa131ed49a61f694241a96a2b548011d872a4108770e.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:37 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:37 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:37 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:37 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:37 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:37 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:37 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-850ccd04bc4756e4259024ed51aa693714c6317c5c32f8afec994db18a947466.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:37 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:37 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:37 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:37 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:37 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-9cdaafd8bb8e8be90d44197aadcf52b6faf2abfe64929c49b11b756d156968f3.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:37 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:37 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:37 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:37 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:38 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:38 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:38 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:38 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:38 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:38 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:38 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:38 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:38 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:38 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:38 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:38 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:38 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:38 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:38 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:39 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:39 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:39 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:39 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:39 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:39 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:39 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:39 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-8eeb9524778427f38c97c10cb218f4b04621c4ae042820ebd2024944be4170d2.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:39 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/logo-81f6900344c483fca85625c85d4f95547c84c07e0d1ae2fd2b1387a4316a4bed.png" for 181.65.27.199 at 2015-10-10 07:20:39 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 181.65.27.199 at 2015-10-10 07:20:58 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_menu.html.erb (2.5ms)
+Completed 200 OK in 373ms (Views: 371.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-125790dddab74142339daa131ed49a61f694241a96a2b548011d872a4108770e.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:59 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:59 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:59 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:59 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:59 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:59 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:59 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-850ccd04bc4756e4259024ed51aa693714c6317c5c32f8afec994db18a947466.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:59 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:59 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:59 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:59 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:59 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-9cdaafd8bb8e8be90d44197aadcf52b6faf2abfe64929c49b11b756d156968f3.css?body=1" for 181.65.27.199 at 2015-10-10 07:20:59 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 181.65.27.199 at 2015-10-10 07:20:59 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:00 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:01 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:01 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:01 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-8eeb9524778427f38c97c10cb218f4b04621c4ae042820ebd2024944be4170d2.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:01 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/logo-81f6900344c483fca85625c85d4f95547c84c07e0d1ae2fd2b1387a4316a4bed.png" for 181.65.27.199 at 2015-10-10 07:21:01 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 181.65.27.199 at 2015-10-10 07:21:34 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (5.6ms)
+Completed 200 OK in 425ms (Views: 423.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-125790dddab74142339daa131ed49a61f694241a96a2b548011d872a4108770e.css?body=1" for 181.65.27.199 at 2015-10-10 07:21:34 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:21:34 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-850ccd04bc4756e4259024ed51aa693714c6317c5c32f8afec994db18a947466.css?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-9cdaafd8bb8e8be90d44197aadcf52b6faf2abfe64929c49b11b756d156968f3.css?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:35 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-8eeb9524778427f38c97c10cb218f4b04621c4ae042820ebd2024944be4170d2.js?body=1" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/logo-81f6900344c483fca85625c85d4f95547c84c07e0d1ae2fd2b1387a4316a4bed.png" for 181.65.27.199 at 2015-10-10 07:21:36 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/quienes" for 181.65.27.199 at 2015-10-10 07:21:45 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#quienes as HTML
+  Parameters: {"alias"=>"quienes"}
+  Rendered static/quienes.html.erb within layouts/static (0.1ms)
+  Rendered layouts/_menu.html.erb (3.8ms)
+Completed 200 OK in 382ms (Views: 380.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 181.65.27.199 at 2015-10-10 07:21:47 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (2.6ms)
+Completed 200 OK in 400ms (Views: 399.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 181.65.27.199 at 2015-10-10 07:23:23 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (3.2ms)
+Completed 200 OK in 314ms (Views: 313.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-125790dddab74142339daa131ed49a61f694241a96a2b548011d872a4108770e.css?body=1" for 181.65.27.199 at 2015-10-10 07:23:23 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:23:23 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:23:23 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:23:23 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:23:23 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:23:23 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-850ccd04bc4756e4259024ed51aa693714c6317c5c32f8afec994db18a947466.css?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-9cdaafd8bb8e8be90d44197aadcf52b6faf2abfe64929c49b11b756d156968f3.css?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:24 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:25 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:25 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:25 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:25 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:25 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:25 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:25 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:25 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:25 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:25 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:25 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:25 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-8eeb9524778427f38c97c10cb218f4b04621c4ae042820ebd2024944be4170d2.js?body=1" for 181.65.27.199 at 2015-10-10 07:23:25 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/logo-81f6900344c483fca85625c85d4f95547c84c07e0d1ae2fd2b1387a4316a4bed.png" for 181.65.27.199 at 2015-10-10 07:23:25 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/quienes" for 181.65.27.199 at 2015-10-10 07:23:27 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#quienes as HTML
+  Parameters: {"alias"=>"quienes"}
+  Rendered static/quienes.html.erb within layouts/static (0.1ms)
+  Rendered layouts/_menu.html.erb (3.6ms)
+Completed 200 OK in 341ms (Views: 340.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 181.65.27.199 at 2015-10-10 07:23:29 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (2.7ms)
+Completed 200 OK in 328ms (Views: 327.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 181.65.27.199 at 2015-10-10 07:24:03 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_menu.html.erb (3.8ms)
+Completed 200 OK in 440ms (Views: 439.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-125790dddab74142339daa131ed49a61f694241a96a2b548011d872a4108770e.css?body=1" for 181.65.27.199 at 2015-10-10 07:24:04 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:24:04 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:24:04 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:24:04 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:24:04 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:24:04 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:24:04 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-850ccd04bc4756e4259024ed51aa693714c6317c5c32f8afec994db18a947466.css?body=1" for 181.65.27.199 at 2015-10-10 07:24:04 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-9cdaafd8bb8e8be90d44197aadcf52b6faf2abfe64929c49b11b756d156968f3.css?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:05 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:06 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:06 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:06 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:06 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:06 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:06 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:06 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:06 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:06 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:06 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-8eeb9524778427f38c97c10cb218f4b04621c4ae042820ebd2024944be4170d2.js?body=1" for 181.65.27.199 at 2015-10-10 07:24:06 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/logo-81f6900344c483fca85625c85d4f95547c84c07e0d1ae2fd2b1387a4316a4bed.png" for 181.65.27.199 at 2015-10-10 07:24:06 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/quienes" for 181.65.27.199 at 2015-10-10 07:24:07 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#quienes as HTML
+  Parameters: {"alias"=>"quienes"}
+  Rendered static/quienes.html.erb within layouts/static (0.1ms)
+  Rendered layouts/_menu.html.erb (5.6ms)
+Completed 200 OK in 437ms (Views: 435.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 181.65.27.199 at 2015-10-10 07:24:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (3.6ms)
+Completed 200 OK in 426ms (Views: 424.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quienes" for 181.65.27.199 at 2015-10-10 07:32:21 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#quienes as HTML
+  Parameters: {"alias"=>"quienes"}
+  Rendered static/quienes.html.erb within layouts/static (0.1ms)
+  Rendered layouts/_menu.html.erb (3.2ms)
+Completed 200 OK in 357ms (Views: 356.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quienes" for 181.65.27.199 at 2015-10-10 07:37:08 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StaticController#quienes as HTML
+  Parameters: {"alias"=>"quienes"}
+  Rendered static/quienes.html.erb within layouts/static (3.0ms)
+  Rendered layouts/_menu.html.erb (9.7ms)
+Completed 200 OK in 842ms (Views: 829.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-125790dddab74142339daa131ed49a61f694241a96a2b548011d872a4108770e.css?body=1" for 181.65.27.199 at 2015-10-10 07:37:09 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:37:09 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:37:09 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:37:09 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:37:09 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:37:09 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:37:09 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-850ccd04bc4756e4259024ed51aa693714c6317c5c32f8afec994db18a947466.css?body=1" for 181.65.27.199 at 2015-10-10 07:37:09 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:37:09 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-9cdaafd8bb8e8be90d44197aadcf52b6faf2abfe64929c49b11b756d156968f3.css?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:10 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:11 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:11 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:11 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:11 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:11 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:11 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:11 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-8eeb9524778427f38c97c10cb218f4b04621c4ae042820ebd2024944be4170d2.js?body=1" for 181.65.27.199 at 2015-10-10 07:37:11 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/logo-81f6900344c483fca85625c85d4f95547c84c07e0d1ae2fd2b1387a4316a4bed.png" for 181.65.27.199 at 2015-10-10 07:37:11 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/quienes" for 181.65.27.199 at 2015-10-10 07:37:13 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#quienes as HTML
+  Parameters: {"alias"=>"quienes"}
+  Rendered static/quienes.html.erb within layouts/static (0.5ms)
+  Rendered layouts/_menu.html.erb (4.6ms)
+Completed 200 OK in 426ms (Views: 424.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 181.65.27.199 at 2015-10-10 07:37:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_menu.html.erb (3.1ms)
+Completed 200 OK in 436ms (Views: 434.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quienes" for 181.65.27.199 at 2015-10-10 07:37:18 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#quienes as HTML
+  Parameters: {"alias"=>"quienes"}
+  Rendered static/quienes.html.erb within layouts/static (0.1ms)
+  Rendered layouts/_menu.html.erb (3.6ms)
+Completed 200 OK in 414ms (Views: 413.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quienes" for 181.65.27.199 at 2015-10-10 07:39:14 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StaticController#quienes as HTML
+  Parameters: {"alias"=>"quienes"}
+  Rendered static/quienes.html.erb within layouts/static (2.2ms)
+  Rendered layouts/_menu.html.erb (8.3ms)
+Completed 200 OK in 755ms (Views: 744.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-125790dddab74142339daa131ed49a61f694241a96a2b548011d872a4108770e.css?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-850ccd04bc4756e4259024ed51aa693714c6317c5c32f8afec994db18a947466.css?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-9cdaafd8bb8e8be90d44197aadcf52b6faf2abfe64929c49b11b756d156968f3.css?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:16 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-8eeb9524778427f38c97c10cb218f4b04621c4ae042820ebd2024944be4170d2.js?body=1" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 181.65.27.199 at 2015-10-10 07:39:17 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_menu.html.erb (3.5ms)
+Completed 200 OK in 496ms (Views: 495.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logo-81f6900344c483fca85625c85d4f95547c84c07e0d1ae2fd2b1387a4316a4bed.png" for 181.65.27.199 at 2015-10-10 07:39:18 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 181.65.27.199 at 2015-10-10 07:39:18 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (2.2ms)
+Completed 200 OK in 469ms (Views: 468.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quienes" for 181.65.27.199 at 2015-10-10 07:39:20 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#quienes as HTML
+  Parameters: {"alias"=>"quienes"}
+  Rendered static/quienes.html.erb within layouts/static (0.3ms)
+  Rendered layouts/_menu.html.erb (4.6ms)
+Completed 200 OK in 365ms (Views: 364.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/servicios" for 181.65.27.199 at 2015-10-10 07:39:22 +0000
+Cannot render console from 181.65.27.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticController#servicios as HTML
+  Parameters: {"alias"=>"servicios"}
+  Rendered static/servicios.html.erb within layouts/static (0.5ms)
+  Rendered layouts/_menu.html.erb (3.1ms)
+Completed 200 OK in 502ms (Views: 500.3ms | ActiveRecord: 0.0ms)
