@@ -4,9 +4,9 @@
         <li><%= link_to "Administracion", rails_admin_path  %></li>
     <% elsif current_user.driver? %>
         <li><%= link_to "Reservas Realizadas", reservations_path  %></li>
-        <li><%= link_to "Comentarios", new_feedback_path  %></li>
+        <li><%= link_to "Comentarios", feedbacks_path  %></li>
     <% elsif current_user.user? %>
-        <li><%= link_to "Reservas Realizadas", reservations_path  %></li>
+        <li><%= link_to "Reservas", reservations_path  %></li>
         <li><%= link_to "Comentarios", new_feedback_path  %></li>
     <% elsif current_user.operator? %>
         <li><%= link_to "Reservas", reservations_path  %></li>
