@@ -6,9 +6,9 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:description) %></th>
-      <th><%= model_class.human_attribute_name(:reservation_id) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th>Comentario</th>
+      <th>Reserva</th>
+      <th>Fecha Creación</th>
       <% if current_user %>
         <% if current_user.admin? %>
           <th><%=t '.actions', :default => t("helpers.actions") %></th>

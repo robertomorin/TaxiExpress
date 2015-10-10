@@ -6,12 +6,12 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:name) %></th>
-      <th><%= model_class.human_attribute_name(:lastname) %></th>
-      <th><%= model_class.human_attribute_name(:email) %></th>
-      <th><%= model_class.human_attribute_name(:password) %></th>
-      <th><%= model_class.human_attribute_name(:vehicle_id) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Correo</th>
+      <th>Contraseña</th>
+      <th>Vehiculo</th>
+      <th>Fecha Creación</th>
       <% if current_user %>
         <% if current_user.admin? %>
           <th><%=t '.actions', :default => t("helpers.actions") %></th>
