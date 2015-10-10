@@ -4,7 +4,13 @@ class ReservationsController < ApplicationController
   # GET /reservations
   # GET /reservations.json
   def index
-    @reservations = Reservation.all
+    if current_user
+      if current_user.user?
+        @reservations = Reservation.all.order("id desc").limit(10)
+      else
+        @reservations = Reservation.all.order("id desc")
+      end
+    end
   end
 
   # GET /reservations/1

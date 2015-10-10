@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:passengersquantity) %></th>
+      <th>Pasajeros</th>
       <th><%= model_class.human_attribute_name(:vehicletype) %></th>
       <th><%= model_class.human_attribute_name(:beginningadress) %></th>
       <th><%= model_class.human_attribute_name(:destinationadress) %></th>
@@ -59,6 +59,14 @@
   </tbody>
 </table>
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_reservation_path,
-            :class => 'btn btn-primary' %>
+<% if current_user %>
+  <% if current_user.admin? %>
+      <%= link_to t('.new', :default => t("helpers.links.new")),
+        new_reservation_path,
+        :class => 'btn btn-primary' %>
+  <% elsif current_user.user? %>
+      <%= link_to t('.new', :default => t("helpers.links.new")),
+        new_reservation_path,
+        :class => 'btn btn-primary' %>
+  <% end %>
+<% end %>
