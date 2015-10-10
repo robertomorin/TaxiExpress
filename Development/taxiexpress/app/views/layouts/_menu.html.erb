@@ -1,8 +1,9 @@
+<li><%= link_to image_tag('logo.png'), root_path %> </li>
 <% if current_user %>
     <% if current_user.admin? %>
-        <li><%= link_to image_tag('logo.png'), root_path %> </li>
         <li><%= link_to "Administracion", rails_admin_path  %></li>
     <% elsif current_user.driver? %>
+<<<<<<< HEAD
         <li><%= link_to image_tag("logo.png"), root_path %> </li>
         <li><%= link_to "Choferes", drivers_path  %></li>
     <% elsif current_user.user? %>
@@ -10,12 +11,17 @@
         <li><%= link_to "Reservas", new_reservation_path  %></li>
         <li><%= link_to "Reservas", reservations_path  %></li>
         <li><%= link_to "Comentarios", feedbacks_path  %></li>
+=======
+        <li><%= link_to "Reservas Realizadas", reservations_path  %></li>
+        <li><%= link_to "Comentarios", new_feedback_path  %></li>
+>>>>>>> e91d0e5f7cb10878752ebc4bbb5c8eaa95221a32
     <% elsif current_user.user? %>
         <li><%= link_to "Reservas Realizadas", reservations_path  %></li>
         <li><%= link_to "Comentarios", new_feedback_path  %></li>
     <% elsif current_user.operator? %>
         <li><%= link_to "Reservas", reservations_path  %></li>
         <li><%= link_to "Comentarios", feedbacks_path  %></li>
+<<<<<<< HEAD
     <% else %>
         <li><%= link_to image_tag('logo.png'), root_path %> </li>
         <li><%= link_to "Quienes Somos", quienes_path  %></li>
@@ -29,4 +35,12 @@
         <li><%= link_to "SERVICIOS", servicios_path  %></li>
         <li><%= link_to "TESTIMONIOS", testimonios_path  %></li>
         <li><%= link_to "CONTACTANOS", contactanos_path  %></li>
+=======
+    <% end %>
+<% else %>
+        <li><%= link_to "Quienes Somos", quienes_path  %></li>
+        <li><%= link_to "Servicios", servicios_path  %></li>
+        <li><%= link_to "Testimonios", testimonios_path  %></li>
+        <li><%= link_to "Contactanos", contactanos_path  %></li>   
+>>>>>>> e91d0e5f7cb10878752ebc4bbb5c8eaa95221a32
 <% end %>

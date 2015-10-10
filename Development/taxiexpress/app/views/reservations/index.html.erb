@@ -16,8 +16,17 @@
       <th><%= model_class.human_attribute_name(:operator_id) %></th>
       <th><%= model_class.human_attribute_name(:status_id) %></th>
       <th><%= model_class.human_attribute_name(:paymenttype_id) %></th>
+      <th><%= model_class.human_attribute_name(:reservationdate) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
-      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+      <% if current_user %>
+        <% if current_user.admin? %>
+          <th><%=t '.actions', :default => t("helpers.actions") %></th>
+        <% elsif current_user.user? %>
+          <th><%=t '.actions', :default => t("helpers.actions") %></th>
+        <% elsif current_user.operator? %>
+          <th><%=t '.actions', :default => t("helpers.actions") %></th>
+        <% end %>
+      <% end %>
     </tr>
   </thead>
   <tbody>
@@ -34,6 +43,7 @@
         <td><%= reservation.operator_id %></td>
         <td><%= reservation.status_id %></td>
         <td><%= reservation.paymenttype_id %></td>
+        <td><%= reservation.reservationdate %></td>
         <td><%=l reservation.created_at %></td>
         <td>
           <% if current_user %>
@@ -51,6 +61,9 @@
                       :method => :delete,
                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
                       :class => 'btn btn-xs btn-danger' %>
+            <% elsif current_user.operator? %>
+              <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_reservation_path(reservation), :class => 'btn btn-default btn-xs' %>
             <% end %>
           <% end %>
         </td>

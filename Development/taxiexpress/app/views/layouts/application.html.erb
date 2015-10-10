@@ -46,11 +46,13 @@
           <span class="icon-bar"></span>
         </button>
         
+        
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
             <%= render 'layouts/menu' %>
           </ul>
-          <p class="navbar-text navbar-right">
+
+           <p class="navbar-text navbar-right">
             <% if current_user%>
               Logueado como <%= current_user.name %>
               <%= " | " %>
@@ -58,7 +60,8 @@
             <% else %>
               <%= link_to "Iniciar Sesión",new_user_session_path %>
             <% end %>
-          </p>
+          </p> 
+          
         </div>
       </div>
     </div>
