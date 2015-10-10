@@ -10,10 +10,6 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_devise_bootstrap_views_less
  *= require_tree .
  *= require_self
- *= bootstrap
- *= lightbox
- *= style
  */

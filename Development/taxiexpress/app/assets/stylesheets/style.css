@@ -43,12 +43,12 @@ aside, nav, article, figure {
 
 /* Main Styles */
 body {
-  font: 14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
-  color: #333333;
-  background: #eeeeee; }
+  font: 14px/1.6 Georgia, Palatino, Palatino Linotype, serif;
+  color: #000000;
+  background: #FFFFFF; }
 
 a, a:visited {
-  color: #00ff00;
+  color: #000000;
   text-decoration: none; }
 
 a:hover, a:active {
@@ -64,7 +64,7 @@ a:hover, a:active {
   height: 58px;
   border: 0;
   display: block;
-  box-shadow: 0 1px 5px 0 #4a4a4a;
+  box-shadow: 0 1px 5px 0 #000000;
   text-indent: -9999px; }
 
 .clear {
