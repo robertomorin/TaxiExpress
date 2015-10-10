@@ -1,7 +1,7 @@
 <li><%= link_to image_tag('logo.png'), root_path %> </li>
 <% if current_user %>
     <% if current_user.admin? %>
-        <li><%= link_to "Administracion", rails_admin_path  %></li>
+        <li><%= link_to "Administración", rails_admin_path  %></li>
     <% elsif current_user.driver? %>
         <li><%= link_to "Reservas Realizadas", reservations_path  %></li>
         <li><%= link_to "Comentarios", feedbacks_path  %></li>
@@ -16,5 +16,5 @@
         <li><%= link_to "Quienes Somos", quienes_path  %></li>
         <li><%= link_to "Servicios", servicios_path  %></li>
         <li><%= link_to "Testimonios", testimonios_path  %></li>
-        <li><%= link_to "Contactanos", contactanos_path  %></li>   
+        <li><%= link_to "Contáctanos", contactanos_path  %></li>   
 <% end %>
