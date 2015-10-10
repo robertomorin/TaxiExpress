@@ -1,14 +1,15 @@
 <% if current_user %>
     <% if current_user.admin? %>
-        <li><%= link_to "VEHICULOS", vehicles_path  %></li>
-        <li><%= link_to "CHOFERES", drivers_path  %></li>
+        <li><%= link_to "Administracion", rails_admin_path  %></li>
     <% elsif current_user.driver? %>
-        <li><%= link_to "CHOFERES", drivers_path  %></li>
+        <li><%= link_to "Choferes", drivers_path  %></li>
+    <% elsif current_user.user? %>
+        <li><%= link_to "Reservas", new_reservation_path  %></li>
     <% else %>
-        <li><%= link_to "QUIENES SOMOS", quienes_path  %></li>
-        <li><%= link_to "SERVICIOS", servicios_path  %></li>
-        <li><%= link_to "TESTIMONIOS", testimonios_path  %></li>
-        <li><%= link_to "CONTACTANOS", contactanos_path  %></li>   
+        <li><%= link_to "Quienes Somos", quienes_path  %></li>
+        <li><%= link_to "Servicios", servicios_path  %></li>
+        <li><%= link_to "Testimonios", testimonios_path  %></li>
+        <li><%= link_to "Contactanos", contactanos_path  %></li>   
     <% end %>
 <% else %>
         <li><%= link_to "QUIENES SOMOS", quienes_path  %></li>
