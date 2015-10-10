@@ -37649,3 +37649,90 @@ Processing by ReservationsController#new as HTML
   Rendered layouts/_menu.html.erb (1.5ms)
 Completed 200 OK in 715ms (Views: 712.1ms | ActiveRecord: 1.0ms)
 >>>>>>> 0e3228fe2047cca31e7064685c7bb6f90776e9f0
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 04:34:06 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered layouts/_menu.html.erb (31.5ms)
+Completed 200 OK in 2635ms (Views: 2611.5ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-125790dddab74142339daa131ed49a61f694241a96a2b548011d872a4108770e.css?body=1" for 190.232.70.160 at 2015-10-10 04:34:09 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/style.self-3e8af390203363f6a05997857b3c50356a030de32d3e66908a35ab03c71bf2ff.css?body=1" for 190.232.70.160 at 2015-10-10 04:34:09 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 04:34:12 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/_menu.html.erb (2.3ms)
+Completed 200 OK in 519ms (Views: 517.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 04:34:14 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered layouts/_menu.html.erb (1.5ms)
+Completed 200 OK in 428ms (Views: 427.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 190.232.70.160 at 2015-10-10 04:34:21 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6Y9Alul7Nr4adYiTHePeO0rzaMIYqhkf8f/UkkbE49B2LXS7luzfSDOAl/33m+VXAM3xL3LTuRFTcqDYBQvB3Q=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to https://taxiexpress-rios1993.c9.io/
+Completed 302 Found in 68ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 04:34:21 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (4.7ms)
+Completed 200 OK in 579ms (Views: 577.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 04:37:51 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (0.7ms)
+Completed 200 OK in 601ms (Views: 599.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 04:38:04 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_menu.html.erb (0.7ms)
+Completed 200 OK in 510ms (Views: 508.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 04:40:13 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (0.8ms)
+Completed 200 OK in 1818ms (Views: 1816.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 04:40:19 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 200 OK in 561ms (Views: 559.6ms | ActiveRecord: 0.0ms)
