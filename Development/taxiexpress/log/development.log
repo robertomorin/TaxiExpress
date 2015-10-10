@@ -42422,3 +42422,1948 @@ Processing by ReservationsController#index as HTML
   Rendered reservations/index.html.erb within layouts/application (8.7ms)
   Rendered layouts/_menu.html.erb (0.3ms)
 Completed 200 OK in 467ms (Views: 464.3ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (5.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddReservationDateToReservation (20151010065740)
+  [1m[35m (232.0ms)[0m  ALTER TABLE `reservations` ADD `reservationdate` datetime
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151010065740')
+  [1m[36m (8.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.9ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (1.0ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'drivers'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `drivers`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'feedbacks'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `feedbacks`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'operators'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `operators`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'paymenttypes'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `paymenttypes`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'reservations'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `reservations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'statuses'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `statuses`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `users`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'vehicles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `vehicles`
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 06:58:16 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (11.7ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/_menu.html.erb (52.5ms)
+Completed 200 OK in 2300ms (Views: 2173.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 06:58:33 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 4  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered layouts/_menu.html.erb (1.8ms)
+Completed 200 OK in 576ms (Views: 571.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/reservations" for 190.232.70.160 at 2015-10-10 06:58:36 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReservationsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered reservations/index.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/home/ubuntu/workspace/Development/taxiexpress/app/views/reservations/index.html.erb:86: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/reservations/index.html.erb:86: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.5ms)
+
+
+Started GET "/reservations" for 190.232.70.160 at 2015-10-10 06:58:37 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReservationsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 4  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered reservations/index.html.erb within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ubuntu/workspace/Development/taxiexpress/app/views/reservations/index.html.erb:86: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/reservations/index.html.erb:86: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.8ms)
+
+
+Started GET "/reservations" for 190.232.70.160 at 2015-10-10 07:02:21 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReservationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered reservations/index.html.erb within layouts/application (16.3ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ubuntu/workspace/Development/taxiexpress/app/views/reservations/index.html.erb:86: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/reservations/index.html.erb:86: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.5ms)
+
+
+Started GET "/reservations" for 190.232.70.160 at 2015-10-10 07:02:43 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReservationsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 4  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mReservation Load (0.6ms)[0m  [1mSELECT `reservations`.* FROM `reservations`  ORDER BY id desc[0m
+  Rendered reservations/index.html.erb within layouts/application (51.3ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+Completed 200 OK in 743ms (Views: 738.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-125790dddab74142339daa131ed49a61f694241a96a2b548011d872a4108770e.css?body=1" for 190.232.70.160 at 2015-10-10 07:02:45 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.160 at 2015-10-10 07:02:45 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.160 at 2015-10-10 07:02:45 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-850ccd04bc4756e4259024ed51aa693714c6317c5c32f8afec994db18a947466.css?body=1" for 190.232.70.160 at 2015-10-10 07:02:45 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.160 at 2015-10-10 07:02:45 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.160 at 2015-10-10 07:02:45 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.160 at 2015-10-10 07:02:46 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.160 at 2015-10-10 07:02:46 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.160 at 2015-10-10 07:02:46 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.160 at 2015-10-10 07:02:46 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.160 at 2015-10-10 07:02:46 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-9cdaafd8bb8e8be90d44197aadcf52b6faf2abfe64929c49b11b756d156968f3.css?body=1" for 190.232.70.160 at 2015-10-10 07:02:46 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:46 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:46 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:47 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:47 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:47 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:47 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:47 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:47 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:47 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:47 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:47 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:48 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:48 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:48 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:48 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 190.232.70.160 at 2015-10-10 07:02:48 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/camera.min.self-fd0be86e9a3fe69785a7c579623d0e2fa86937b69fd13b73e6d98831de43a526.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:48 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drivers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:48 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:48 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-1.11.2.min.self-cc83565074b3fa7f2283f7f4d56b90ad171ede87008448ed5d2e91c50575bed1.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:48 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.easing.1.3.self-c85028b4485f3b7e91508aa9891cfeb41a8884efd87672715de3fa1ae2173948.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:48 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.lightbox.self-e1efa2ea7769174733a18891bc10608e8257fdafc95e03a693dfe968f2911c86.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:49 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:49 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:49 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:49 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/paymenttypes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:49 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reservations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:49 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:53 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:53 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-8eeb9524778427f38c97c10cb218f4b04621c4ae042820ebd2024944be4170d2.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:53 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:53 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/statuses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:53 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vehicles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:53 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:53 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/logo-81f6900344c483fca85625c85d4f95547c84c07e0d1ae2fd2b1387a4316a4bed.png" for 190.232.70.160 at 2015-10-10 07:02:53 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:53 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:54 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:54 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:54 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:55 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/camera.min.self-fd0be86e9a3fe69785a7c579623d0e2fa86937b69fd13b73e6d98831de43a526.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:55 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-1.11.2.min.self-cc83565074b3fa7f2283f7f4d56b90ad171ede87008448ed5d2e91c50575bed1.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:55 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.lightbox.self-e1efa2ea7769174733a18891bc10608e8257fdafc95e03a693dfe968f2911c86.js?body=1" for 190.232.70.160 at 2015-10-10 07:02:56 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/logo-81f6900344c483fca85625c85d4f95547c84c07e0d1ae2fd2b1387a4316a4bed.png" for 190.232.70.160 at 2015-10-10 07:02:57 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started DELETE "/users/sign_out" for 190.232.70.160 at 2015-10-10 07:03:11 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VYxYCh8vsQb2SrHZFjlfcBgtdZT5rUBXvelCQob9hqxfe7fr6Vdp/ypHfsbPSP26qaYDlzUz5izN2ZOKNqBn2w=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 4  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to https://taxiexpress-rios1993.c9.io/
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 07:03:12 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+Completed 200 OK in 428ms (Views: 427.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 190.232.70.160 at 2015-10-10 07:03:15 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/shared/_links.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/sessions/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 392ms (Views: 390.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 190.232.70.160 at 2015-10-10 07:03:17 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kyYdu5Ixe7SFg5CnNC+p0UWaH4iZKa4sw/d6Zs9sYVRZtXH8GVAowyIa13CMshsE7EQoEXioTLtwf4sAxS1+Pw==", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'admin@example.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (4.2ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2015-10-10 05:54:35', `current_sign_in_at` = '2015-10-10 07:03:17', `sign_in_count` = 11, `updated_at` = '2015-10-10 07:03:17' WHERE `users`.`id` = 1[0m
+  [1m[35m (10.6ms)[0m  COMMIT
+Redirected to https://taxiexpress-rios1993.c9.io/
+Completed 302 Found in 146ms (ActiveRecord: 15.5ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 07:03:17 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/_menu.html.erb (3.5ms)
+Completed 200 OK in 548ms (Views: 545.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin" for 190.232.70.160 at 2015-10-10 07:03:19 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `drivers`[0m
+  [1m[35mDriver Load (0.1ms)[0m  SELECT  `drivers`.* FROM `drivers`  ORDER BY drivers.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `feedbacks`[0m
+  [1m[35mFeedback Load (0.1ms)[0m  SELECT  `feedbacks`.* FROM `feedbacks`  ORDER BY feedbacks.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `operators`[0m
+  [1m[35mOperator Load (0.1ms)[0m  SELECT  `operators`.* FROM `operators`  ORDER BY operators.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `paymenttypes`[0m
+  [1m[35mPaymenttype Load (0.1ms)[0m  SELECT  `paymenttypes`.* FROM `paymenttypes`  ORDER BY paymenttypes.updated_at desc LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM `reservations`[0m
+  [1m[35mReservation Load (1.0ms)[0m  SELECT  `reservations`.* FROM `reservations`  ORDER BY reservations.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `statuses`[0m
+  [1m[35mStatus Load (0.1ms)[0m  SELECT  `statuses`.* FROM `statuses`  ORDER BY statuses.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  ORDER BY users.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `vehicles`[0m
+  [1m[35mVehicle Load (0.1ms)[0m  SELECT  `vehicles`.* FROM `vehicles`  ORDER BY vehicles.updated_at desc LIMIT 1
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (26.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_navigation.html.haml (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (8.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/pjax.html.haml (1.7ms)
+Completed 200 OK in 556ms (Views: 493.9ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/admin" for 190.232.70.160 at 2015-10-10 07:03:22 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `drivers`
+  [1m[36mDriver Load (0.1ms)[0m  [1mSELECT  `drivers`.* FROM `drivers`  ORDER BY drivers.updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `feedbacks`
+  [1m[36mFeedback Load (0.1ms)[0m  [1mSELECT  `feedbacks`.* FROM `feedbacks`  ORDER BY feedbacks.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `operators`
+  [1m[36mOperator Load (0.1ms)[0m  [1mSELECT  `operators`.* FROM `operators`  ORDER BY operators.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `paymenttypes`
+  [1m[36mPaymenttype Load (0.1ms)[0m  [1mSELECT  `paymenttypes`.* FROM `paymenttypes`  ORDER BY paymenttypes.updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `reservations`
+  [1m[36mReservation Load (0.1ms)[0m  [1mSELECT  `reservations`.* FROM `reservations`  ORDER BY reservations.updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `statuses`
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT  `statuses`.* FROM `statuses`  ORDER BY statuses.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `users`
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  ORDER BY users.updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `vehicles`
+  [1m[36mVehicle Load (0.3ms)[0m  [1mSELECT  `vehicles`.* FROM `vehicles`  ORDER BY vehicles.updated_at desc LIMIT 1[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (29.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_navigation.html.haml (5.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/pjax.html.haml (2.0ms)
+Completed 200 OK in 475ms (Views: 453.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.self-b331c6047f9d48e0bc34c7afba242c26776507f572b368d6dcf03a947755bae5.css?body=1" for 190.232.70.160 at 2015-10-10 07:03:23 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:23 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect.self-3acdb29e7da09c8f0195b994d2f04d73bfef50dc539c84fd2c835d964d33e5c1.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:23 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:23 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:23 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:24 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:24 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:24 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:24 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-3befc48aba87cead090cfd014562b2771a662ac6d2c8197b24c08b2d9f3d9f2d.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:24 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:24 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.self-357a8f834a6b278f578acd51708542bff0852a75d8d583d0d761d3f387af5b4c.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:24 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.self-aebfa594606a37fdeb4b8790e07e648cdc239e1b6e8883043154f5ff9803381b.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:24 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.self-1f0885ba9b32015a82d09f3894a7fd052adc2775442ef071bff20f2f8c839fdf.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:24 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.self-65a540a6a8e61569a39a37bd1456543ae5e5bbe48868247372bed40a1dff2bcf.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:24 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.filter-box.self-bb5179c1ffa04133d86f8982f03cdba69794bf7b1d5e7540637f0545f3f7c34a.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:24 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.self-311fe7ade63d94f957c80962dbde1698c79bf92fb4d9f45af5c03551be430cca.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:25 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.self-29fedc7e0063905fecd8485d5a526f85b0d0c3f04de8416c2b56227e5b530528.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:25 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.remote-form.self-6ee31242b35c47eae247621696152697683860be737fcb9fc7705305736c9370.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:25 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/jquery.pjax.self-aa02343d5b755c77fd76db8b2d2864cf2aebdba056b56e74b3b91f2e65207444.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:25 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/menu.self-7abc1c9401509a7e4fc609b1e461be6fd17e8116e8fda19cc59d05ba79aefb68.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:25 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:25 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.iframe-transport.self-9d6de1e3d97369f20a85456477db38a3d2b674761f4a252275201ec0272793a4.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:25 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.self-abecd3cd4d55ce44cbf00b87d2f612d570af5e7fe5701d05135d60f8c07e7d37.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:25 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:25 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:25 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:26 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.i18n.self-b53117470f576a75451809b61aca2b0cee91aa2df4dfcd87078e4f638486eef5.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:26 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:26 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:26 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:26 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:27 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:27 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.self-2621ced336904d375bef144d46edd9d304889e09c6559d64df325bbd10f4ce8a.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:27 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:27 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:27 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:27 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:27 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.widgets.self-7611c567687f77238d93624657b014cb885bfe3de2f8fd06f6c077d906692867.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:27 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ui.self-5f1671365225e7918e5bf4cb99fc38b189e81884fb859682f79a683f41ee19b7.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:27 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:27 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/rails_admin.self-76f0a23ad5f8028895d20de39faa555dd2d46a6f5d1d6b03b546f9d0156372c5.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:28 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/custom/ui.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:28 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:29 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.iframe-transport.self-9d6de1e3d97369f20a85456477db38a3d2b674761f4a252275201ec0272793a4.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:29 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.self-357a8f834a6b278f578acd51708542bff0852a75d8d583d0d761d3f387af5b4c.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:30 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect.self-3acdb29e7da09c8f0195b994d2f04d73bfef50dc539c84fd2c835d964d33e5c1.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:30 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:31 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:31 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:31 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:31 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:32 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/menu.self-7abc1c9401509a7e4fc609b1e461be6fd17e8116e8fda19cc59d05ba79aefb68.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:32 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-3befc48aba87cead090cfd014562b2771a662ac6d2c8197b24c08b2d9f3d9f2d.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:32 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:32 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.self-aebfa594606a37fdeb4b8790e07e648cdc239e1b6e8883043154f5ff9803381b.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:33 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.self-1f0885ba9b32015a82d09f3894a7fd052adc2775442ef071bff20f2f8c839fdf.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:33 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.self-65a540a6a8e61569a39a37bd1456543ae5e5bbe48868247372bed40a1dff2bcf.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:33 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.filter-box.self-bb5179c1ffa04133d86f8982f03cdba69794bf7b1d5e7540637f0545f3f7c34a.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:34 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.self-311fe7ade63d94f957c80962dbde1698c79bf92fb4d9f45af5c03551be430cca.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:34 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.self-29fedc7e0063905fecd8485d5a526f85b0d0c3f04de8416c2b56227e5b530528.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:34 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.remote-form.self-6ee31242b35c47eae247621696152697683860be737fcb9fc7705305736c9370.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:34 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/jquery.pjax.self-aa02343d5b755c77fd76db8b2d2864cf2aebdba056b56e74b3b91f2e65207444.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:35 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:35 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.self-abecd3cd4d55ce44cbf00b87d2f612d570af5e7fe5701d05135d60f8c07e7d37.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:35 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.i18n.self-b53117470f576a75451809b61aca2b0cee91aa2df4dfcd87078e4f638486eef5.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:35 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:36 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:36 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:36 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:36 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:37 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:37 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:37 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:38 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:38 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:38 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:38 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:39 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.self-2621ced336904d375bef144d46edd9d304889e09c6559d64df325bbd10f4ce8a.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:39 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:39 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.widgets.self-7611c567687f77238d93624657b014cb885bfe3de2f8fd06f6c077d906692867.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:39 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ui.self-5f1671365225e7918e5bf4cb99fc38b189e81884fb859682f79a683f41ee19b7.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:40 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/custom/ui.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:40 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/rails_admin.self-76f0a23ad5f8028895d20de39faa555dd2d46a6f5d1d6b03b546f9d0156372c5.js?body=1" for 190.232.70.160 at 2015-10-10 07:03:40 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/fontawesome-webfont-3c4a1bb7ce3234407184f0d80cc4dec075e4ad616b44dcc5778e1cfb1bc24019.woff2?v=4.4.0" for 190.232.70.160 at 2015-10-10 07:03:40 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/reservation?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.160 at 2015-10-10 07:03:44 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"reservation"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mReservation Load (0.3ms)[0m  [1mSELECT  `reservations`.* FROM `reservations`  ORDER BY reservations.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` IN (2)
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` IN (1)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `reservations`
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (55.8ms)
+Completed 200 OK in 202ms (Views: 61.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/reservation/1/edit?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.160 at 2015-10-10 07:03:50 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"reservation", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mReservation Load (0.3ms)[0m  SELECT  `reservations`.* FROM `reservations` WHERE `reservations`.`id` = 1  ORDER BY `reservations`.`id` ASC LIMIT 1
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_text.html.haml (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_text.html.haml (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `vehicles`[0m
+  [1m[35mVehicle Load (0.4ms)[0m  SELECT `vehicles`.* FROM `vehicles`  ORDER BY vehicles.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (10.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `users`
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users`  ORDER BY users.id desc[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (17.6ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `operators`
+  [1m[36mOperator Load (0.2ms)[0m  [1mSELECT `operators`.* FROM `operators`  ORDER BY operators.id desc[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (5.9ms)
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `statuses`[0m
+  [1m[35mStatus Load (0.2ms)[0m  SELECT `statuses`.* FROM `statuses`  ORDER BY statuses.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (7.1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `paymenttypes`[0m
+  [1m[35mPaymenttype Load (0.2ms)[0m  SELECT `paymenttypes`.* FROM `paymenttypes`  ORDER BY paymenttypes.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_submit_buttons.html.haml (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (81.0ms)
+Completed 200 OK in 99ms (Views: 87.3ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/admin/paymenttype?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.160 at 2015-10-10 07:07:47 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"paymenttype"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mPaymenttype Load (0.3ms)[0m  SELECT  `paymenttypes`.* FROM `paymenttypes`  ORDER BY paymenttypes.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `paymenttypes`[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (16.3ms)
+Completed 200 OK in 50ms (Views: 24.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/admin/reservation?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.160 at 2015-10-10 07:07:49 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"reservation"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT  `reservations`.* FROM `reservations`  ORDER BY reservations.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` IN (2)
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` IN (1)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `reservations`
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (76.9ms)
+Completed 200 OK in 100ms (Views: 81.8ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/admin/reservation/1/edit?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.160 at 2015-10-10 07:07:51 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"reservation", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mReservation Load (0.2ms)[0m  SELECT  `reservations`.* FROM `reservations` WHERE `reservations`.`id` = 1  ORDER BY `reservations`.`id` ASC LIMIT 1
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_text.html.haml (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_text.html.haml (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  [1m[36mVehicle Load (0.1ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`  ORDER BY vehicles.id desc[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (4.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users`  ORDER BY users.id desc[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (6.8ms)
+  [1m[35mOperator Load (0.1ms)[0m  SELECT `operators`.* FROM `operators`  ORDER BY operators.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (3.7ms)
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT  `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 1 LIMIT 1[0m
+  [1m[35mStatus Load (0.1ms)[0m  SELECT `statuses`.* FROM `statuses`  ORDER BY statuses.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (5.2ms)
+  [1m[36mPaymenttype Load (0.1ms)[0m  [1mSELECT `paymenttypes`.* FROM `paymenttypes`  ORDER BY paymenttypes.id desc[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_submit_buttons.html.haml (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (57.7ms)
+Completed 200 OK in 81ms (Views: 71.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/reservation?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.160 at 2015-10-10 07:08:00 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"reservation"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mReservation Load (0.1ms)[0m  [1mSELECT  `reservations`.* FROM `reservations`  ORDER BY reservations.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` IN (2)
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` IN (1)[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `reservations`
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (35.2ms)
+Completed 200 OK in 47ms (Views: 41.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/reservation/new?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.160 at 2015-10-10 07:08:03 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"reservation"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_text.html.haml (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_text.html.haml (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  [1m[35mVehicle Load (0.2ms)[0m  SELECT `vehicles`.* FROM `vehicles`  ORDER BY vehicles.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (3.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users`  ORDER BY users.id desc[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (3.7ms)
+  [1m[35mOperator Load (0.1ms)[0m  SELECT `operators`.* FROM `operators`  ORDER BY operators.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (3.0ms)
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT `statuses`.* FROM `statuses`  ORDER BY statuses.id desc[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (3.1ms)
+  [1m[35mPaymenttype Load (0.1ms)[0m  SELECT `paymenttypes`.* FROM `paymenttypes`  ORDER BY paymenttypes.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_submit_buttons.html.haml (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (41.6ms)
+Completed 200 OK in 55ms (Views: 48.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/reservation?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.160 at 2015-10-10 07:08:08 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"reservation"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mReservation Load (0.2ms)[0m  SELECT  `reservations`.* FROM `reservations`  ORDER BY reservations.id desc LIMIT 20 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (2)[0m
+  [1m[35mStatus Load (0.1ms)[0m  SELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` IN (1)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `reservations`[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (41.1ms)
+Completed 200 OK in 55ms (Views: 48.1ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for 190.232.70.160 at 2015-10-10 07:08:10 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MhnihNeRIbiYhP7geoIVB5yfkMEg1yyfGrlNkZEqzQeOPg5DqgyyKWyMe3PkgTr1vZvDRT3oPYj5OPJ5YfxNYA=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to https://taxiexpress-rios1993.c9.io/
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 07:08:10 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+Completed 200 OK in 374ms (Views: 372.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 190.232.70.160 at 2015-10-10 07:08:17 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/shared/_links.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/sessions/new.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+Completed 200 OK in 770ms (Views: 767.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 190.232.70.160 at 2015-10-10 07:08:33 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJXARkrEMOQlbDVnNUbeydb0bvrmdTy/O41Rtef4njabQok+7BFaoYMycVOQUE04nbD1RE/B7mHkWFTC7qhhuQ==", "user"=>{"email"=>"driver@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (9.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'driver@example.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.7ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2015-10-10 05:55:42', `current_sign_in_at` = '2015-10-10 07:08:33', `sign_in_count` = 3, `updated_at` = '2015-10-10 07:08:33' WHERE `users`.`id` = 4[0m
+  [1m[35m (11.8ms)[0m  COMMIT
+Redirected to https://taxiexpress-rios1993.c9.io/
+Completed 302 Found in 116ms (ActiveRecord: 22.9ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 07:08:33 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/_menu.html.erb (1.8ms)
+Completed 200 OK in 391ms (Views: 390.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reservations" for 190.232.70.160 at 2015-10-10 07:08:35 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReservationsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 4  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mReservation Load (0.1ms)[0m  [1mSELECT `reservations`.* FROM `reservations`  ORDER BY id desc[0m
+  Rendered reservations/index.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_menu.html.erb (1.1ms)
+Completed 200 OK in 392ms (Views: 389.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reservations/1" for 190.232.70.160 at 2015-10-10 07:08:47 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReservationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mReservation Load (0.3ms)[0m  SELECT  `reservations`.* FROM `reservations` WHERE `reservations`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered reservations/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+Completed 200 OK in 427ms (Views: 424.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 190.232.70.160 at 2015-10-10 07:08:53 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EIeVI3gQCbyO+ZL3ocQERqqUxuLDeNdLyza+tEMg+lBKYAo41l29syMWDz8XH4HtI7mHH5HjobXWfZROKAH+qA=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 4  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to https://taxiexpress-rios1993.c9.io/
+Completed 302 Found in 21ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 07:08:54 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 390ms (Views: 389.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 190.232.70.160 at 2015-10-10 07:08:56 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/sessions/new.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 384ms (Views: 383.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 190.232.70.160 at 2015-10-10 07:08:58 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qqYN5lzZt2wObI/SEXmAJge98Bhyd032GMOvFtCTSH2kQTHqxkKP9FY8Sl5Gv8mitm2o0lqVTYX1+DKzLBEwlA==", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'admin@example.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.7ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2015-10-10 07:03:17', `current_sign_in_at` = '2015-10-10 07:08:59', `sign_in_count` = 12, `updated_at` = '2015-10-10 07:08:59' WHERE `users`.`id` = 1[0m
+  [1m[35m (12.1ms)[0m  COMMIT
+Redirected to https://taxiexpress-rios1993.c9.io/
+Completed 302 Found in 105ms (ActiveRecord: 15.2ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 07:08:59 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/_menu.html.erb (1.8ms)
+Completed 200 OK in 344ms (Views: 342.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reservations" for 190.232.70.160 at 2015-10-10 07:09:06 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReservationsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mReservation Load (0.1ms)[0m  [1mSELECT `reservations`.* FROM `reservations`  ORDER BY id desc[0m
+  Rendered reservations/index.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+Completed 200 OK in 445ms (Views: 441.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reservations/4/edit" for 190.232.70.160 at 2015-10-10 07:09:08 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mReservation Load (0.5ms)[0m  SELECT  `reservations`.* FROM `reservations` WHERE `reservations`.`id` = 4 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  [1m[35mOperator Load (0.2ms)[0m  SELECT `operators`.* FROM `operators`
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT `statuses`.* FROM `statuses`[0m
+  [1m[35mPaymenttype Load (0.1ms)[0m  SELECT `paymenttypes`.* FROM `paymenttypes`
+  Rendered reservations/_form.html.erb (61.2ms)
+  Rendered reservations/edit.html.erb within layouts/application (64.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/_menu.html.erb (1.8ms)
+Completed 200 OK in 464ms (Views: 461.3ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/reservations/4" for 190.232.70.160 at 2015-10-10 07:09:19 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReservationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6jIo+XHJxf0mD1X8/JD9c8hYpgNkII2+LpJLd6Yt33QBQpKU8XrijZdBL1Zros1OWEpU96zia7Mt92hYzZiQtQ==", "reservation"=>{"passengersquantity"=>"1", "vehicletype"=>"ffs", "beginningadress"=>"ffff", "destinationadress"=>"ffff", "price"=>"13", "vehicle_id"=>"", "user_id"=>"2", "operator_id"=>"", "status_id"=>"1", "paymenttype_id"=>"", "reservationdate(1i)"=>"2015", "reservationdate(2i)"=>"10", "reservationdate(3i)"=>"10", "reservationdate(4i)"=>"07", "reservationdate(5i)"=>"09"}, "commit"=>"Update Reservation", "id"=>"4"}
+  [1m[35mReservation Load (0.1ms)[0m  SELECT  `reservations`.* FROM `reservations` WHERE `reservations`.`id` = 4 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.1ms)[0m  UPDATE `reservations` SET `reservationdate` = '2015-10-10 07:09:00', `updated_at` = '2015-10-10 07:09:19' WHERE `reservations`.`id` = 4
+  [1m[36m (10.4ms)[0m  [1mCOMMIT[0m
+Redirected to https://taxiexpress-rios1993.c9.io/reservations/4
+Completed 302 Found in 25ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/reservations/4" for 190.232.70.160 at 2015-10-10 07:09:19 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReservationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mReservation Load (1.4ms)[0m  SELECT  `reservations`.* FROM `reservations` WHERE `reservations`.`id` = 4 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered reservations/show.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+Completed 200 OK in 392ms (Views: 388.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/reservations" for 190.232.70.160 at 2015-10-10 07:09:23 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReservationsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT `reservations`.* FROM `reservations`  ORDER BY id desc[0m
+  Rendered reservations/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+Completed 200 OK in 365ms (Views: 362.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 190.232.70.160 at 2015-10-10 07:09:29 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `drivers`[0m
+  [1m[35mDriver Load (0.1ms)[0m  SELECT  `drivers`.* FROM `drivers`  ORDER BY drivers.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `feedbacks`[0m
+  [1m[35mFeedback Load (0.1ms)[0m  SELECT  `feedbacks`.* FROM `feedbacks`  ORDER BY feedbacks.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `operators`[0m
+  [1m[35mOperator Load (0.2ms)[0m  SELECT  `operators`.* FROM `operators`  ORDER BY operators.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `paymenttypes`[0m
+  [1m[35mPaymenttype Load (0.1ms)[0m  SELECT  `paymenttypes`.* FROM `paymenttypes`  ORDER BY paymenttypes.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `reservations`[0m
+  [1m[35mReservation Load (0.2ms)[0m  SELECT  `reservations`.* FROM `reservations`  ORDER BY reservations.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `statuses`[0m
+  [1m[35mStatus Load (0.1ms)[0m  SELECT  `statuses`.* FROM `statuses`  ORDER BY statuses.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  ORDER BY users.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `vehicles`[0m
+  [1m[35mVehicle Load (0.1ms)[0m  SELECT  `vehicles`.* FROM `vehicles`  ORDER BY vehicles.updated_at desc LIMIT 1
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (22.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_navigation.html.haml (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/pjax.html.haml (1.3ms)
+Completed 200 OK in 410ms (Views: 385.3ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/admin" for 190.232.70.160 at 2015-10-10 07:09:33 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `drivers`
+  [1m[36mDriver Load (0.1ms)[0m  [1mSELECT  `drivers`.* FROM `drivers`  ORDER BY drivers.updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `feedbacks`
+  [1m[36mFeedback Load (0.1ms)[0m  [1mSELECT  `feedbacks`.* FROM `feedbacks`  ORDER BY feedbacks.updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `operators`
+  [1m[36mOperator Load (0.1ms)[0m  [1mSELECT  `operators`.* FROM `operators`  ORDER BY operators.updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `paymenttypes`
+  [1m[36mPaymenttype Load (0.1ms)[0m  [1mSELECT  `paymenttypes`.* FROM `paymenttypes`  ORDER BY paymenttypes.updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `reservations`
+  [1m[36mReservation Load (0.1ms)[0m  [1mSELECT  `reservations`.* FROM `reservations`  ORDER BY reservations.updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `statuses`
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT  `statuses`.* FROM `statuses`  ORDER BY statuses.updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `users`
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  ORDER BY users.updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `vehicles`
+  [1m[36mVehicle Load (0.1ms)[0m  [1mSELECT  `vehicles`.* FROM `vehicles`  ORDER BY vehicles.updated_at desc LIMIT 1[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (20.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_navigation.html.haml (6.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (8.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/pjax.html.haml (1.4ms)
+Completed 200 OK in 465ms (Views: 446.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.self-b331c6047f9d48e0bc34c7afba242c26776507f572b368d6dcf03a947755bae5.css?body=1" for 190.232.70.160 at 2015-10-10 07:09:34 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:34 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:34 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.iframe-transport.self-9d6de1e3d97369f20a85456477db38a3d2b674761f4a252275201ec0272793a4.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:35 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.self-357a8f834a6b278f578acd51708542bff0852a75d8d583d0d761d3f387af5b4c.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:35 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:35 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:35 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:35 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:35 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/menu.self-7abc1c9401509a7e4fc609b1e461be6fd17e8116e8fda19cc59d05ba79aefb68.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:35 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-3befc48aba87cead090cfd014562b2771a662ac6d2c8197b24c08b2d9f3d9f2d.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:35 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.self-aebfa594606a37fdeb4b8790e07e648cdc239e1b6e8883043154f5ff9803381b.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:35 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.self-1f0885ba9b32015a82d09f3894a7fd052adc2775442ef071bff20f2f8c839fdf.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:36 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect.self-3acdb29e7da09c8f0195b994d2f04d73bfef50dc539c84fd2c835d964d33e5c1.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:36 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.self-65a540a6a8e61569a39a37bd1456543ae5e5bbe48868247372bed40a1dff2bcf.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:36 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.filter-box.self-bb5179c1ffa04133d86f8982f03cdba69794bf7b1d5e7540637f0545f3f7c34a.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:36 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.self-311fe7ade63d94f957c80962dbde1698c79bf92fb4d9f45af5c03551be430cca.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:36 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:36 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.remote-form.self-6ee31242b35c47eae247621696152697683860be737fcb9fc7705305736c9370.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:36 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:36 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.self-29fedc7e0063905fecd8485d5a526f85b0d0c3f04de8416c2b56227e5b530528.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:36 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.i18n.self-b53117470f576a75451809b61aca2b0cee91aa2df4dfcd87078e4f638486eef5.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:37 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:37 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:37 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:37 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:37 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:37 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/jquery.pjax.self-aa02343d5b755c77fd76db8b2d2864cf2aebdba056b56e74b3b91f2e65207444.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:37 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:37 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:37 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:37 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:38 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:38 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:39 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:39 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:39 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.self-2621ced336904d375bef144d46edd9d304889e09c6559d64df325bbd10f4ce8a.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:39 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/custom/ui.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:39 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:39 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.widgets.self-7611c567687f77238d93624657b014cb885bfe3de2f8fd06f6c077d906692867.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:39 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ui.self-5f1671365225e7918e5bf4cb99fc38b189e81884fb859682f79a683f41ee19b7.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:39 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/rails_admin.self-76f0a23ad5f8028895d20de39faa555dd2d46a6f5d1d6b03b546f9d0156372c5.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:39 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.self-abecd3cd4d55ce44cbf00b87d2f612d570af5e7fe5701d05135d60f8c07e7d37.js?body=1" for 190.232.70.160 at 2015-10-10 07:09:39 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/fontawesome-webfont-3c4a1bb7ce3234407184f0d80cc4dec075e4ad616b44dcc5778e1cfb1bc24019.woff2?v=4.4.0" for 190.232.70.160 at 2015-10-10 07:09:40 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/reservation?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.160 at 2015-10-10 07:09:43 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"reservation"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mReservation Load (0.3ms)[0m  [1mSELECT  `reservations`.* FROM `reservations`  ORDER BY reservations.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` IN (2)
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` IN (1)[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `reservations`
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (213.3ms)
+Completed 200 OK in 244ms (Views: 228.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/reservation" for 190.232.70.160 at 2015-10-10 07:09:45 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"reservation"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mReservation Load (0.1ms)[0m  SELECT  `reservations`.* FROM `reservations`  ORDER BY reservations.id desc LIMIT 20 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (2)[0m
+  [1m[35mStatus Load (0.1ms)[0m  SELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` IN (1)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `reservations`[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (199.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_navigation.html.haml (8.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (13.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/pjax.html.haml (14.0ms)
+Completed 200 OK in 1593ms (Views: 1584.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/reservation/4/edit?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.160 at 2015-10-10 07:09:52 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"reservation", "id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mReservation Load (7.8ms)[0m  [1mSELECT  `reservations`.* FROM `reservations` WHERE `reservations`.`id` = 4  ORDER BY `reservations`.`id` ASC LIMIT 1[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_text.html.haml (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_text.html.haml (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  [1m[35mVehicle Load (0.1ms)[0m  SELECT `vehicles`.* FROM `vehicles`  ORDER BY vehicles.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (8.0ms)
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users`  ORDER BY users.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (8.5ms)
+  [1m[36mOperator Load (0.9ms)[0m  [1mSELECT `operators`.* FROM `operators`  ORDER BY operators.id desc[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (7.8ms)
+  [1m[35mStatus Load (0.1ms)[0m  SELECT  `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 1 LIMIT 1
+  [1m[36mStatus Load (1.4ms)[0m  [1mSELECT `statuses`.* FROM `statuses`  ORDER BY statuses.id desc[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (11.4ms)
+  [1m[35mPaymenttype Load (1.4ms)[0m  SELECT `paymenttypes`.* FROM `paymenttypes`  ORDER BY paymenttypes.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (1512.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_submit_buttons.html.haml (4.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (1612.2ms)
+Completed 200 OK in 1651ms (Views: 1628.0ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/admin/reservation/4/edit" for 190.232.70.160 at 2015-10-10 07:09:54 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"model_name"=>"reservation", "id"=>"4"}
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mReservation Load (0.7ms)[0m  SELECT  `reservations`.* FROM `reservations` WHERE `reservations`.`id` = 4  ORDER BY `reservations`.`id` ASC LIMIT 1
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_text.html.haml (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_text.html.haml (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  [1m[36mVehicle Load (1.7ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`  ORDER BY vehicles.id desc[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (9.4ms)
+  [1m[35mUser Load (1.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT `users`.* FROM `users`  ORDER BY users.id desc[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (13.7ms)
+  [1m[35mOperator Load (0.1ms)[0m  SELECT `operators`.* FROM `operators`  ORDER BY operators.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (7.7ms)
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 1 LIMIT 1[0m
+  [1m[35mStatus Load (0.2ms)[0m  SELECT `statuses`.* FROM `statuses`  ORDER BY statuses.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (10.5ms)
+  [1m[36mPaymenttype Load (1.0ms)[0m  [1mSELECT `paymenttypes`.* FROM `paymenttypes`  ORDER BY paymenttypes.id desc[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (8.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_submit_buttons.html.haml (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/application (101.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_navigation.html.haml (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/pjax.html.haml (12.2ms)
+Completed 200 OK in 1015ms (Views: 995.2ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/admin/reservation/4?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.160 at 2015-10-10 07:10:05 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"reservation", "id"=>"4"}
+  [1m[35mUser Load (4.8ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT  `reservations`.* FROM `reservations` WHERE `reservations`.`id` = 4  ORDER BY `reservations`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mStatus Load (0.1ms)[0m  [1mSELECT  `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 1 LIMIT 1[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax (23.1ms)
+Completed 200 OK in 51ms (Views: 36.8ms | ActiveRecord: 5.4ms)
+  [1m[36m (19.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (51.6ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateVehicles (20150930063414)
+  [1m[35m (19.6ms)[0m  CREATE TABLE `vehicles` (`id` int(11) auto_increment PRIMARY KEY, `trademark` varchar(255), `model` varchar(255), `creationyear` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (8.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150930063414')
+  [1m[36m (9.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateOperators (20150930063505)
+  [1m[35m (38.2ms)[0m  CREATE TABLE `operators` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `lastname` varchar(255), `mail` varchar(255), `password` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150930063505')
+  [1m[36m (10.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateDrivers (20150930063701)
+  [1m[35m (41.7ms)[0m  CREATE TABLE `drivers` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `lastname` varchar(255), `email` varchar(255), `password` varchar(255), `vehicle_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_drivers_on_vehicle_id`  (`vehicle_id`) ) ENGINE=InnoDB
+  [1m[36m (71.1ms)[0m  [1mALTER TABLE `drivers` ADD CONSTRAINT `fk_rails_1a908cd823`
+FOREIGN KEY (`vehicle_id`)
+  REFERENCES `vehicles` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150930063701')[0m
+  [1m[35m (10.3ms)[0m  COMMIT
+Migrating to CreateStatuses (20150930070845)
+  [1m[36m (26.3ms)[0m  [1mCREATE TABLE `statuses` (`id` int(11) auto_increment PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150930070845')[0m
+  [1m[35m (11.0ms)[0m  COMMIT
+Migrating to CreatePaymenttypes (20150930071512)
+  [1m[36m (32.2ms)[0m  [1mCREATE TABLE `paymenttypes` (`id` int(11) auto_increment PRIMARY KEY, `name` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150930071512')[0m
+  [1m[35m (2.4ms)[0m  COMMIT
+Migrating to CreateUsers (20151005014444)
+  [1m[36m (27.4ms)[0m  [1mCREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `lastname` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (4.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151005014444')[0m
+  [1m[35m (17.8ms)[0m  COMMIT
+Migrating to AddDeviseToUsers (20151005014534)
+  [1m[36m (74.6ms)[0m  [1mALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (71.7ms)[0m  ALTER TABLE `users` ADD `encrypted_password` varchar(255) DEFAULT '' NOT NULL
+  [1m[36m (83.9ms)[0m  [1mALTER TABLE `users` ADD `reset_password_token` varchar(255)[0m
+  [1m[35m (71.5ms)[0m  ALTER TABLE `users` ADD `reset_password_sent_at` datetime
+  [1m[36m (76.0ms)[0m  [1mALTER TABLE `users` ADD `remember_created_at` datetime[0m
+  [1m[35m (59.3ms)[0m  ALTER TABLE `users` ADD `sign_in_count` int(11) DEFAULT 0 NOT NULL
+  [1m[36m (55.8ms)[0m  [1mALTER TABLE `users` ADD `current_sign_in_at` datetime[0m
+  [1m[35m (64.6ms)[0m  ALTER TABLE `users` ADD `last_sign_in_at` datetime
+  [1m[36m (37.1ms)[0m  [1mALTER TABLE `users` ADD `current_sign_in_ip` varchar(255)[0m
+  [1m[35m (77.4ms)[0m  ALTER TABLE `users` ADD `last_sign_in_ip` varchar(255)
+  [1m[36m (43.1ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (43.1ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151005014534')
+  [1m[36m (10.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateReservations (20151005021219)
+  [1m[35m (39.9ms)[0m  CREATE TABLE `reservations` (`id` int(11) auto_increment PRIMARY KEY, `passengersquantity` int(11), `vehicletype` varchar(255), `beginningadress` text, `destinationadress` text, `price` decimal, `vehicle_id` int(11), `user_id` int(11), `operator_id` int(11), `status_id` int(11), `paymenttype_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_reservations_on_vehicle_id`  (`vehicle_id`) ,  INDEX `index_reservations_on_user_id`  (`user_id`) ,  INDEX `index_reservations_on_operator_id`  (`operator_id`) ,  INDEX `index_reservations_on_status_id`  (`status_id`) ,  INDEX `index_reservations_on_paymenttype_id`  (`paymenttype_id`) ) ENGINE=InnoDB
+  [1m[36m (83.4ms)[0m  [1mALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_fadbcd7cf7`
+FOREIGN KEY (`vehicle_id`)
+  REFERENCES `vehicles` (`id`)
+[0m
+  [1m[35m (71.6ms)[0m  ALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_48a92fce51`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+
+  [1m[36m (71.1ms)[0m  [1mALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_20c2b68908`
+FOREIGN KEY (`operator_id`)
+  REFERENCES `operators` (`id`)
+[0m
+  [1m[35m (55.6ms)[0m  ALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_1bd997b878`
+FOREIGN KEY (`status_id`)
+  REFERENCES `statuses` (`id`)
+
+  [1m[36m (59.6ms)[0m  [1mALTER TABLE `reservations` ADD CONSTRAINT `fk_rails_2f3d031103`
+FOREIGN KEY (`paymenttype_id`)
+  REFERENCES `paymenttypes` (`id`)
+[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151005021219')[0m
+  [1m[35m (10.3ms)[0m  COMMIT
+Migrating to CreateFeedbacks (20151005021345)
+  [1m[36m (21.4ms)[0m  [1mCREATE TABLE `feedbacks` (`id` int(11) auto_increment PRIMARY KEY, `description` text, `reservation_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_feedbacks_on_reservation_id`  (`reservation_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (41.6ms)[0m  ALTER TABLE `feedbacks` ADD CONSTRAINT `fk_rails_996f0dd441`
+FOREIGN KEY (`reservation_id`)
+  REFERENCES `reservations` (`id`)
+
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151005021345')
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddRoleToUser (20151010032623)
+  [1m[35m (53.3ms)[0m  ALTER TABLE `users` ADD `role` int(11)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151010032623')
+  [1m[36m (10.7ms)[0m  [1mCOMMIT[0m
+Migrating to AddReservationDateToReservation (20151010065740)
+  [1m[35m (79.5ms)[0m  ALTER TABLE `reservations` ADD `reservationdate` datetime
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151010065740')
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'drivers'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `drivers`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'feedbacks'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `feedbacks`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'operators'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `operators`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'paymenttypes'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `paymenttypes`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'reservations'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `reservations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'statuses'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `statuses`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `users`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'taxiexpress_development'
+  AND fk.table_name = 'vehicles'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `vehicles`
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 07:15:16 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered layouts/_menu.html.erb (13.5ms)
+Completed 200 OK in 706ms (Views: 694.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 07:15:25 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 319ms (Views: 318.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 190.232.70.160 at 2015-10-10 07:15:28 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/shared/_links.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/sessions/new.html.erb within layouts/application (111.7ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+Completed 200 OK in 636ms (Views: 618.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 190.232.70.160 at 2015-10-10 07:15:32 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/shared/_links.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/registrations/new.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 401ms (Views: 399.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 190.232.70.160 at 2015-10-10 07:15:39 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sm0cMxMBxR9j0jGC7G5V5fdc9hHZJ9YdMcgqsd6iV7KhHaZek7Lib9KcSyh7XGXYZ04E5RHlMBAyrQmetRcYcw==", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (2.6ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'admin@example.com' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('admin@example.com', '$2a$10$GnR7CrRYTNNDa8eeM8Oef.JijLmEt1ClKsxwUhe4/lSDsJiUvA312', '2015-10-10 07:15:39', '2015-10-10 07:15:39')[0m
+  [1m[35m (11.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2015-10-10 07:15:39', `current_sign_in_at` = '2015-10-10 07:15:39', `last_sign_in_ip` = '190.232.70.160', `current_sign_in_ip` = '190.232.70.160', `sign_in_count` = 1, `updated_at` = '2015-10-10 07:15:39' WHERE `users`.`id` = 1
+  [1m[36m (10.4ms)[0m  [1mCOMMIT[0m
+Redirected to https://taxiexpress-rios1993.c9.io/
+Completed 302 Found in 159ms (ActiveRecord: 26.9ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 07:15:40 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered layouts/_menu.html.erb (2.1ms)
+Completed 200 OK in 376ms (Views: 375.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 190.232.70.160 at 2015-10-10 07:15:46 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `drivers`
+  [1m[36mDriver Load (0.2ms)[0m  [1mSELECT  `drivers`.* FROM `drivers`  ORDER BY drivers.updated_at desc LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `feedbacks`
+  [1m[36mFeedback Load (0.1ms)[0m  [1mSELECT  `feedbacks`.* FROM `feedbacks`  ORDER BY feedbacks.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `operators`
+  [1m[36mOperator Load (0.2ms)[0m  [1mSELECT  `operators`.* FROM `operators`  ORDER BY operators.updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `paymenttypes`
+  [1m[36mPaymenttype Load (0.2ms)[0m  [1mSELECT  `paymenttypes`.* FROM `paymenttypes`  ORDER BY paymenttypes.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `reservations`
+  [1m[36mReservation Load (0.3ms)[0m  [1mSELECT  `reservations`.* FROM `reservations`  ORDER BY reservations.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `statuses`
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  `statuses`.* FROM `statuses`  ORDER BY statuses.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `users`
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  ORDER BY users.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `vehicles`
+  [1m[36mVehicle Load (0.2ms)[0m  [1mSELECT  `vehicles`.* FROM `vehicles`  ORDER BY vehicles.updated_at desc LIMIT 1[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (32.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_navigation.html.haml (7.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/pjax.html.haml (2.9ms)
+Completed 200 OK in 722ms (Views: 528.2ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/admin" for 190.232.70.160 at 2015-10-10 07:15:47 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `drivers`[0m
+  [1m[35mDriver Load (0.1ms)[0m  SELECT  `drivers`.* FROM `drivers`  ORDER BY drivers.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `feedbacks`[0m
+  [1m[35mFeedback Load (0.1ms)[0m  SELECT  `feedbacks`.* FROM `feedbacks`  ORDER BY feedbacks.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `operators`[0m
+  [1m[35mOperator Load (0.1ms)[0m  SELECT  `operators`.* FROM `operators`  ORDER BY operators.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `paymenttypes`[0m
+  [1m[35mPaymenttype Load (0.1ms)[0m  SELECT  `paymenttypes`.* FROM `paymenttypes`  ORDER BY paymenttypes.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `reservations`[0m
+  [1m[35mReservation Load (0.2ms)[0m  SELECT  `reservations`.* FROM `reservations`  ORDER BY reservations.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `statuses`[0m
+  [1m[35mStatus Load (0.1ms)[0m  SELECT  `statuses`.* FROM `statuses`  ORDER BY statuses.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  ORDER BY users.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `vehicles`[0m
+  [1m[35mVehicle Load (0.1ms)[0m  SELECT  `vehicles`.* FROM `vehicles`  ORDER BY vehicles.updated_at desc LIMIT 1
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (18.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_navigation.html.haml (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (8.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/pjax.html.haml (1.5ms)
+Completed 200 OK in 577ms (Views: 557.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/reservation?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.160 at 2015-10-10 07:15:50 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"reservation"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mReservation Load (0.2ms)[0m  SELECT  `reservations`.* FROM `reservations`  ORDER BY reservations.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `reservations`[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (56.2ms)
+Completed 200 OK in 83ms (Views: 63.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/reservation/new?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.160 at 2015-10-10 07:15:53 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"reservation"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_text.html.haml (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_text.html.haml (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `vehicles`[0m
+  [1m[35mVehicle Load (0.2ms)[0m  SELECT `vehicles`.* FROM `vehicles`  ORDER BY vehicles.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (19.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`  ORDER BY users.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (8.1ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM `operators`[0m
+  [1m[35mOperator Load (0.2ms)[0m  SELECT `operators`.* FROM `operators`  ORDER BY operators.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (6.9ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `statuses`[0m
+  [1m[35mStatus Load (0.2ms)[0m  SELECT `statuses`.* FROM `statuses`  ORDER BY statuses.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (5.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `paymenttypes`[0m
+  [1m[35mPaymenttype Load (0.2ms)[0m  SELECT `paymenttypes`.* FROM `paymenttypes`  ORDER BY paymenttypes.id desc
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_filtering_select.html.haml (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_datetime.html.haml (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_submit_buttons.html.haml (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (94.8ms)
+Completed 200 OK in 110ms (Views: 102.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.160 at 2015-10-10 07:16:01 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  ORDER BY users.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (33.3ms)
+Completed 200 OK in 49ms (Views: 40.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/user/1/edit?_pjax=%5Bdata-pjax-container%5D" for 190.232.70.160 at 2015-10-10 07:16:03 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_text.html.haml (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_datetime.html.haml (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_datetime.html.haml (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_datetime.html.haml (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_datetime.html.haml (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_enumeration.html.haml (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/_submit_buttons.html.haml (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (52.2ms)
+Completed 200 OK in 70ms (Views: 62.0ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/admin/user/1/edit" for 190.232.70.160 at 2015-10-10 07:16:21 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q0oOpAMYXP5eD4Giae++CAYmJxow4F73/HqnbVRPt1hAOrTJg6t7ju9B+wj+3Y41ljTV7vgiuPr/H4RCP/r4mQ==", "user"=>{"name"=>"Administrador", "lastname"=>"Administrador", "email"=>"admin@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]", "remember_created_at"=>"", "sign_in_count"=>"1", "current_sign_in_at"=>"October 10, 2015 07:15", "last_sign_in_at"=>"October 10, 2015 07:15", "current_sign_in_ip"=>"190.232.70.160", "last_sign_in_ip"=>"190.232.70.160", "role"=>"3"}, "return_to"=>"https://taxiexpress-rios1993.c9.io/admin/user", "_save"=>"", "model_name"=>"user", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `name` = 'Administrador', `lastname` = 'Administrador', `current_sign_in_at` = '2015-10-10 07:15:00', `last_sign_in_at` = '2015-10-10 07:15:00', `role` = 3, `updated_at` = '2015-10-10 07:16:21' WHERE `users`.`id` = 1[0m
+  [1m[35m (4.5ms)[0m  COMMIT
+Redirected to https://taxiexpress-rios1993.c9.io/admin/user
+Completed 302 Found in 20ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/admin/user" for 190.232.70.160 at 2015-10-10 07:16:21 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  ORDER BY users.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (19.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_navigation.html.haml (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/pjax.html.haml (4.2ms)
+Completed 200 OK in 425ms (Views: 419.0ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/users/sign_out" for 190.232.70.160 at 2015-10-10 07:16:27 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7Ibo0eIv1fC1LiGJbRG1EkLUCIjq9LWrHBmbFTbLc5oH9lK8YpzygARgWyP6I4Uv0sb6fCI2U6YffLg6XX48Ww=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to https://taxiexpress-rios1993.c9.io/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 07:16:29 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+Completed 200 OK in 342ms (Views: 341.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 190.232.70.160 at 2015-10-10 07:16:31 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/shared/_links.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/devise-bootstrap-views-0.0.6/app/views/devise/sessions/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+Completed 200 OK in 365ms (Views: 363.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 190.232.70.160 at 2015-10-10 07:16:36 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2fLk9Fyd21joiQVWBb6pbyNxMhLRi8sMFU7JoI4rd053T4qbGgtRlFuMw2AjfcW455c+Sb8JHxmGutEWbBzEWA==", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'admin@example.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `current_sign_in_at` = '2015-10-10 07:16:36', `sign_in_count` = 2, `updated_at` = '2015-10-10 07:16:36' WHERE `users`.`id` = 1[0m
+  [1m[35m (3.0ms)[0m  COMMIT
+Redirected to https://taxiexpress-rios1993.c9.io/
+Completed 302 Found in 99ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 190.232.70.160 at 2015-10-10 07:16:37 +0000
+Cannot render console from 190.232.70.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/_menu.html.erb (1.9ms)
+Completed 200 OK in 356ms (Views: 354.7ms | ActiveRecord: 0.7ms)

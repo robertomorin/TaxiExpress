@@ -19,6 +19,8 @@
   <%= error_span(@reservation[:status]) %>
   <%= f.association :paymenttype %>
   <%= error_span(@reservation[:paymenttype]) %>
+  <%= f.input :reservationdate %>
+  <%= error_span(@reservation[:reservationdate]) %>
 
   <%= f.button :submit, :class => 'btn-primary' %>
   <%= link_to t('.cancel', :default => t("helpers.links.cancel")),

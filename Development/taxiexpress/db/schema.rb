@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151010032623) do
+ActiveRecord::Schema.define(version: 20151010065740) do
 
   create_table "drivers", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(version: 20151010032623) do
     t.integer  "paymenttype_id",     limit: 4
     t.datetime "created_at",                                      null: false
     t.datetime "updated_at",                                      null: false
+    t.datetime "reservationdate"
   end
 
   add_index "reservations", ["operator_id"], name: "index_reservations_on_operator_id", using: :btree
