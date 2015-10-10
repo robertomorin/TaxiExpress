@@ -17,13 +17,13 @@
   <dt><strong><%= model_class.human_attribute_name(:vehicle_id) %>:</strong></dt>
   <dd><%= @reservation.vehicle_id %></dd>
   <dt><strong><%= model_class.human_attribute_name(:user_id) %>:</strong></dt>
-  <dd><%= @reservation.user_id %></dd>
+  <dd><%= @reservation.user_name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:operator_id) %>:</strong></dt>
   <dd><%= @reservation.operator_id %></dd>
   <dt><strong><%= model_class.human_attribute_name(:status_id) %>:</strong></dt>
-  <dd><%= @reservation.status_id %></dd>
+  <dd><%= @reservation.status_name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:paymenttype_id) %>:</strong></dt>
-  <dd><%= @reservation.paymenttype_id %></dd>
+  <dd><%= @reservation.paymenttype_name %></dd>
 </dl>
 <% if current_user %>
     <% if current_user.admin? %>
