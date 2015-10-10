@@ -12,10 +12,14 @@
         <li><%= link_to "Comentarios", feedbacks_path  %></li>
 
         <li><%= link_to "Reservas Realizadas", reservations_path  %></li>
+<<<<<<< HEAD
         <li><%= link_to "Comentarios", new_feedback_path  %></li>
 
+=======
+        <li><%= link_to "Comentarios", feedbacks_path  %></li>
+>>>>>>> e2246a23dec3ba76f2a894476eaae1778e2b937e
     <% elsif current_user.user? %>
-        <li><%= link_to "Reservas Realizadas", reservations_path  %></li>
+        <li><%= link_to "Reservas", reservations_path  %></li>
         <li><%= link_to "Comentarios", new_feedback_path  %></li>
     <% elsif current_user.operator? %>
         <li><%= link_to "Reservas", reservations_path  %></li>
