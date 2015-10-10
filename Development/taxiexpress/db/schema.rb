@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151005021345) do
+ActiveRecord::Schema.define(version: 20151010032623) do
 
   create_table "drivers", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -91,6 +91,7 @@ ActiveRecord::Schema.define(version: 20151005021345) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip",     limit: 255
     t.string   "last_sign_in_ip",        limit: 255
+    t.integer  "role",                   limit: 4
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

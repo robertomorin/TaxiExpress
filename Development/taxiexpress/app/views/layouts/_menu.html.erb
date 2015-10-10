@@ -1,7 +1,19 @@
+<% if current_user %>
+    <% if current_user.admin? %>
+        <li><%= link_to "VEHICULOS", vehicles_path  %></li>
+        <li><%= link_to "CHOFERES", drivers_path  %></li>
+    <% elsif current_user.driver? %>
+        <li><%= link_to "CHOFERES", drivers_path  %></li>
+    <% else %>
+        <li><%= link_to "QUIENES SOMOS", quienes_path  %></li>
+        <li><%= link_to "SERVICIOS", servicios_path  %></li>
+        <li><%= link_to "TESTIMONIOS", testimonios_path  %></li>
+        <li><%= link_to "CONTACTANOS", contactanos_path  %></li>   
+    <% end %>
+<% else %>
+        <li><%= link_to "QUIENES SOMOS", quienes_path  %></li>
+        <li><%= link_to "SERVICIOS", servicios_path  %></li>
+        <li><%= link_to "TESTIMONIOS", testimonios_path  %></li>
+        <li><%= link_to "CONTACTANOS", contactanos_path  %></li>   
+<% end %>
 
-<li><%= link_to "QUIENES SOMOS", quienes_path  %></li>
-<li><%= link_to "SERVICIOS", servicios_path  %></li>
-<li><%= link_to "TESTIMONIOS", testimonios_path  %></li>
-<li><%= link_to "CONTACTANOS", contactanos_path  %></li>
-<li><%= link_to "VEHICULOS", vehicles_path  %></li>
-<li><%= link_to "CHOFERES", drivers_path  %></li>
