@@ -1,20 +1,26 @@
-<%= simple_form_for(@reservation) do |f| %>
-  <%= f.error_notification %>
+<%= simple_form_for @reservation, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :passengersquantity %>
+  <%= error_span(@reservation[:passengersquantity]) %>
+  <%= f.input :vehicletype %>
+  <%= error_span(@reservation[:vehicletype]) %>
+  <%= f.input :beginningadress %>
+  <%= error_span(@reservation[:beginningadress]) %>
+  <%= f.input :destinationadress %>
+  <%= error_span(@reservation[:destinationadress]) %>
+  <%= f.input :price %>
+  <%= error_span(@reservation[:price]) %>
+  <%= f.input :vehicle_id %>
+  <%= error_span(@reservation[:vehicle_id]) %>
+  <%= f.association :user %>
+  <%= error_span(@reservation[:user]) %>
+  <%= f.association :operator %>
+  <%= error_span(@reservation[:operator]) %>
+  <%= f.association :status %>
+  <%= error_span(@reservation[:status]) %>
+  <%= f.association :paymenttype %>
+  <%= error_span(@reservation[:paymenttype]) %>
 
-  <div class="form-inputs">
-    <%= f.input :passengersquantity %>
-    <%= f.input :vehicletype %>
-    <%= f.input :beginningadress %>
-    <%= f.input :destinationadress %>
-    <%= f.input :price %>
-    <%= f.association :vehicle %>
-    <%= f.association :user %>
-    <%= f.association :operator %>
-    <%= f.association :status %>
-    <%= f.association :paymenttype %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                reservations_path, :class => 'btn btn-default' %>
 <% end %>

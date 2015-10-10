@@ -1,14 +1,21 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = Feedback -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @feedback.description %>
-</p>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
+  <dd><%= @feedback.description %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:reservation_id) %>:</strong></dt>
+  <dd><%= @feedback.reservation_id %></dd>
+</dl>
 
-<p>
-  <strong>Reservation:</strong>
-  <%= @feedback.reservation %>
-</p>
-
-<%= link_to 'Edit', edit_feedback_path(@feedback) %> |
-<%= link_to 'Back', feedbacks_path %>
+<%= link_to t('.back', :default => t("helpers.links.back")),
+              feedbacks_path, :class => 'btn btn-default'  %>
+<%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_feedback_path(@feedback), :class => 'btn btn-default' %>
+<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              feedback_path(@feedback),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>

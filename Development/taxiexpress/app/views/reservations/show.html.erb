@@ -1,54 +1,50 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = Reservation -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
 
-<p>
-  <strong>Cantidad de Pasajeros:</strong>
-  <%= @reservation.passengersquantity %>
-</p>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:passengersquantity) %>:</strong></dt>
+  <dd><%= @reservation.passengersquantity %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:vehicletype) %>:</strong></dt>
+  <dd><%= @reservation.vehicletype %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:beginningadress) %>:</strong></dt>
+  <dd><%= @reservation.beginningadress %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:destinationadress) %>:</strong></dt>
+  <dd><%= @reservation.destinationadress %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:price) %>:</strong></dt>
+  <dd><%= @reservation.price %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:vehicle_id) %>:</strong></dt>
+  <dd><%= @reservation.vehicle_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:user_id) %>:</strong></dt>
+  <dd><%= @reservation.user_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:operator_id) %>:</strong></dt>
+  <dd><%= @reservation.operator_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:status_id) %>:</strong></dt>
+  <dd><%= @reservation.status_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:paymenttype_id) %>:</strong></dt>
+  <dd><%= @reservation.paymenttype_id %></dd>
+</dl>
+<% if current_user %>
+    <% if current_user.admin? %>
+        <%= link_to t('.back', :default => t("helpers.links.back")),
+                  reservations_path, :class => 'btn btn-default'  %>
+        <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                  edit_reservation_path(@reservation), :class => 'btn btn-default' %>
+        <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                  reservation_path(@reservation),
+                  :method => 'delete',
+                  :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                  :class => 'btn btn-danger' %>
+    <% elsif current_user.user? %>
+        <%= link_to t('.back', :default => t("helpers.links.back")),
+              reservations_path, :class => 'btn btn-default'  %>
+        <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              reservation_path(@reservation),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+    <% end %>
+<% end %>
 
-<p>
-  <strong>Tipo de Vehiculo:</strong>
-  <%= @reservation.vehicletype %>
-</p>
 
-<p>
-  <strong>Direccion Origen:</strong>
-  <%= @reservation.beginningadress %>
-</p>
-
-<p>
-  <strong>Direccion Destino:</strong>
-  <%= @reservation.destinationadress %>
-</p>
-
-<p>
-  <strong>Precio:</strong>
-  <%= @reservation.price %>
-</p>
-
-<p>
-  <strong>Vehiculo:</strong>
-  <%= @reservation.vehicle %>
-</p>
-
-<p>
-  <strong>Usuario:</strong>
-  <%= @reservation.user %>
-</p>
-
-<p>
-  <strong>Operador:</strong>
-  <%= @reservation.operator %>
-</p>
-
-<p>
-  <strong>Estado:</strong>
-  <%= @reservation.status %>
-</p>
-
-<p>
-  <strong>Tipo de Pago:</strong>
-  <%= @reservation.paymenttype %>
-</p>
-
-<%= link_to 'Edit', edit_reservation_path(@reservation) %> |
-<%= link_to 'Back', reservations_path %>
