@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
 
+  #get 'static/quienes'
+     get 'quienes', controller: :static, action: :quienes, alias: 'quienes'
+
+  #get 'static/servicios'
+get 'servicios', controller: :static, action: :servicios, alias: 'servicios'
+  #get 'static/testimonios'
+get 'testimonios', controller: :static, action: :testimonios, alias: 'testimonios'
+  #get 'static/contactanos'
+get 'contactanos', controller: :static, action: :contactanos, alias: 'contactanos'
+
+
   resources :feedbacks
   resources :reservations
   devise_for :users
