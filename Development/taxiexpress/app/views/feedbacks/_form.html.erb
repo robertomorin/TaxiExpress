@@ -1,12 +1,10 @@
-<%= simple_form_for(@feedback) do |f| %>
-  <%= f.error_notification %>
+<%= simple_form_for @feedback, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :description %>
+  <%= error_span(@feedback[:description]) %>
+  <%= f.association :reservation %>
+  <%= error_span(@feedback[:reservation_id]) %>
 
-  <div class="form-inputs">
-    <%= f.input :description %>
-    <%= f.association :reservation %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                feedbacks_path, :class => 'btn btn-default' %>
 <% end %>
