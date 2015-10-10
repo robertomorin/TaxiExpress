@@ -47,7 +47,8 @@
           <span class="icon-bar"></span>
         </button>
         <!-- /Href=<%=root_path %>>TAXI EXPRESS -->
-        <a class="navbar-brand"></a> <%= image_tag "logo.png", :alt => "Logo", :title => "Logo"%></a>
+        <!--<a class="navbar-brand" href=<%=root_path %>></a> <%= image_tag "logo.png", :alt => "Logo", :title => "Logo"%></a>-->
+        <%= link_to(image_tag("logo.png"), root_path) %>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
             <%= render 'layouts/menu' %>
